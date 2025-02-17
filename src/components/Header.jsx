@@ -23,11 +23,7 @@ export const Header = () => {
       {/* Mobile Menu Toggle */}
       <div className="lg:hidden">
         <button onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? (
-            <X size={28} />
-          ) : (
-            <Menu size={28} />
-          )}
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
