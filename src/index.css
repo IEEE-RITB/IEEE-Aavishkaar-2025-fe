@@ -1,1 +1,69 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-void: #0a0a0a;
+  --color-neon-pink: #ff00ff;
+  --color-electric-blue: #00f3ff;
+  --color-hacker-green: #00ff00;
+  --color-neon-purple: #6a00ff;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a0a0a] text-white font-rajdhani;
+  }
+}
+
+@layer components {
+  .neon-border {
+    @apply relative;
+    box-shadow: 0 0 10px var(--color-neon-pink), 0 0 20px var(--color-neon-pink),
+      0 0 30px var(--color-neon-pink);
+  }
+
+  .glassmorphism {
+    @apply bg-black/30 backdrop-blur-md;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#6A00FF] to-[#FF00FF];
+  }
+
+  .neon-button {
+    @apply px-6 py-2 rounded-lg font-orbitron font-bold relative overflow-hidden
+           transition-all duration-300 ease-in-out;
+    background: linear-gradient(
+      45deg,
+      var(--color-neon-purple),
+      var(--color-neon-pink)
+    );
+    box-shadow: 0 0 10px var(--color-neon-pink);
+  }
+
+  .neon-button:hover {
+    box-shadow: 0 0 20px var(--color-neon-pink), 0 0 40px var(--color-neon-pink);
+  }
+}
+
+.glitch {
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
