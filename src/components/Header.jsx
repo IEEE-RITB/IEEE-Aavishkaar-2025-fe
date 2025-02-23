@@ -7,7 +7,7 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between p-4 bg-white shadow-md">
+    <div className="flex items-center justify-between p-4 shadow-md shadow-gray-600">
       <img src={reactLogo} alt="Logo" className="h-10" />
 
       {/* Desktop Navigation */}
