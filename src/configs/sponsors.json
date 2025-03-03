@@ -1,0 +1,20 @@
+[
+  {
+    "name": "TechChjorp Industries",
+    "tier": "Platinum",
+    "logo": "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=400&fit=crop",
+    "description": "Leading provider of cybernetic enhancements"
+  },
+  {
+    "name": "Neural Networks Inc",
+    "tier": "Gold",
+    "logo": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=400&fit=crop",
+    "description": "Pioneering AI research and development"
+  },
+  {
+    "name": "Quantum Solutions",
+    "tier": "Gold",
+    "logo": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&fit=crop",
+    "description": "Next-generation quantum computing"
+  }
+]

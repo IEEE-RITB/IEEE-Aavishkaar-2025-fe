@@ -1,0 +1,26 @@
+[
+  {
+    "time": "09:00 AM",
+    "date": "April 15, 2025",
+    "title": "Opening Ceremony",
+    "location": "Main Stage",
+    "speaker": "Dr. Sarah Chen",
+    "attendees": 1000
+  },
+  {
+    "time": "10:30 AM",
+    "date": "April 15, 2025",
+    "title": "Future of AI Panel",
+    "location": "Tech Hub",
+    "speaker": "Various Industry Leaders",
+    "attendees": 500
+  },
+  {
+    "time": "02:00 PM",
+    "date": "April 15, 2025",
+    "title": "VR Workshop",
+    "location": "Innovation Lab",
+    "speaker": "James Rodriguez",
+    "attendees": 200
+  }
+]
