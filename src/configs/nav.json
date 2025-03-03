@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Home",
+    "path": "/",
+    "icon": "Home"
+  },
+  {
+    "name": "Events",
+    "path": "/events",
+    "icon": "Calendar"
+  },
+  {
+    "name": "Schedule",
+    "path": "/schedule",
+    "icon": "Clock"
+  },
+  {
+    "name": "Sponsors",
+    "path": "/sponsors",
+    "icon": "Star"
+  },
+  {
+    "name": "Team",
+    "path": "/team",
+    "icon": "Users"
+  },
+  {
+    "name": "Contact",
+    "path": "/contact",
+    "icon": "Phone"
+  }
+]
