@@ -1,6 +1,6 @@
 ## Contributing Guidelines
 
-Note: Befor pushing your code make sure that you run this command and don't have any errors. If you have any issues, make sure to fix them or else the deployments might fail.
+Note: Before pushing your code make sure that you run this command and don't have any errors. If you have any issues, make sure to fix them or else the deployments might fail.
 
 ```bash
 npm run build
