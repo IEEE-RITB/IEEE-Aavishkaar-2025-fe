@@ -80,7 +80,7 @@ const EventForm = () => {
                   htmlFor="description"
                   className="block text-sm font-medium text-gray-300 mb-2"
                 >
-                  Descripton
+                  Description
                 </label>
                 <textarea
                   id="description"
