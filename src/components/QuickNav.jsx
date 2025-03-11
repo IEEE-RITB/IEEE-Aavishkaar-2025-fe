@@ -1,7 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { Calendar, Users, Building2, Users2, MessageSquare } from 'lucide-react';
-import { useSpring, animated } from '@react-spring/web';
 
 const navItems = [
   {
@@ -37,24 +35,15 @@ const navItems = [
 ];
 
 const QuickNavCard = ({ item }) => {
-  const [props, set] = useSpring(() => ({
-    scale: 1,
-    rotateY: 0,
-    config: { mass: 5, tension: 500, friction: 80 }
-  }));
-
   return (
     <Link to={item.path}>
-      <animated.div
-        style={props}
-        onMouseEnter={() => set({ scale: 1.05, rotateY: 5 })}
-        onMouseLeave={() => set({ scale: 1, rotateY: 0 })}
+      <div
         className="bg-black/40 backdrop-blur-md rounded-lg p-6 border border-neon-pink/30 hover:border-neon-pink/60 transition-colors"
       >
         <div className="text-neon-pink mb-4">{item.icon}</div>
         <h3 className="font-orbitron text-xl font-bold mb-2 text-gradient">{item.title}</h3>
         <p className="text-gray-300">{item.description}</p>
-      </animated.div>
+      </div>
     </Link>
   );
 };

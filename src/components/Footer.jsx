@@ -1,16 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import {
-  Github,
-  Twitter,
   Linkedin,
   Instagram,
   ArrowUp,
   Mail,
   MapPin,
-  Phone,
-  Zap,
 } from 'lucide-react';
+import ieeeData from "../configs/ieee-data.config.json";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -90,19 +87,13 @@ const Footer = () => {
                 {' '}
                 {/* Centered on mobile */}
                 <Mail className="w-4 h-4 text-neon-pink" />
-                <span className="text-gray-300">info@techfest2025.com</span>
-              </li>
-              <li className="flex items-center space-x-2 justify-center md:justify-start">
-                {' '}
-                {/* Centered on mobile */}
-                <Phone className="w-4 h-4 text-electric-blue" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">{ieeeData.email}</span>
               </li>
               <li className="flex items-center space-x-2 justify-center md:justify-start">
                 {' '}
                 {/* Centered on mobile */}
                 <MapPin className="w-4 h-4 text-hacker-green" />
-                <span className="text-gray-300">Tech District, Cyber City</span>
+                <span className="text-gray-300">{ieeeData.address}</span>
               </li>
             </ul>
           </div>
@@ -112,29 +103,30 @@ const Footer = () => {
               Follow Us
             </h3>
             <div className="flex space-x-4 justify-center md:justify-start">
-              {' '}
               {/* Centered on mobile */}
-              <a
+              {/* <a
                 href="#"
                 className="text-gray-300 hover:text-neon-pink transition-colors"
               >
                 <Twitter className="w-6 h-6" />
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="#"
                 className="text-gray-300 hover:text-neon-pink transition-colors"
               >
                 <Github className="w-6 h-6" />
-              </a>
+              </a> */}
               <a
-                href="#"
+                href={ieeeData.socials.linkedin}
                 className="text-gray-300 hover:text-neon-pink transition-colors"
+                target='_blank'
               >
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="#"
+                href={ieeeData.socials.instagram}
                 className="text-gray-300 hover:text-neon-pink transition-colors"
+                target='_blank'
               >
                 <Instagram className="w-6 h-6" />
               </a>

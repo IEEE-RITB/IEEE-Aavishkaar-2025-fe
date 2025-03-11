@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { useSpring, animated } from "@react-spring/web";
 import { Send } from "lucide-react";
-import NebulaBackground from "../NebulaBackground";
 
 const EventForm = () => {
   const [formData, setFormData] = useState({
@@ -29,11 +27,6 @@ const EventForm = () => {
     ],
   });
 
-  const fadeIn = useSpring({
-    from: { opacity: 0, transform: "translateY(20px)" },
-    to: { opacity: 1, transform: "translateY(0)" },
-  });
-
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission
@@ -49,8 +42,7 @@ const EventForm = () => {
 
   return (
     <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
-      <NebulaBackground />
-      <animated.div style={fadeIn} className="relative z-10">
+      <div className="relative z-10">
         <h1 className="font-orbitron text-4xl md:text-5xl font-bold mb-8 text-center">
           <span className="text-gradient">Register For Event</span>
         </h1>
@@ -251,7 +243,7 @@ const EventForm = () => {
             </form>
           </div>
         </div>
-      </animated.div>
+      </div>
     </div>
   );
 };

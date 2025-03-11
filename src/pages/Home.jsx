@@ -6,13 +6,11 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <main className="h-screen w-full bg-[#0D0D1A] text-white flex flex-col overflow-y-auto overflow-x-hidden">
-      <Navbar />
+    <>
       <Hero />
-      <FeaturedEvents />
       <AnimatedFooter />
-      <Footer />
-    </main>
+      <FeaturedEvents />
+    </>
   );
 };
 

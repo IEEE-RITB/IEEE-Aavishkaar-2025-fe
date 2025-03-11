@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { useSpring, animated } from "@react-spring/web";
 import { Send } from "lucide-react";
-import NebulaBackground from "../NebulaBackground";
 
 const AddTeamForm = () => {
   const [formData, setFormData] = useState({
@@ -18,11 +16,6 @@ const AddTeamForm = () => {
         usn: "",
       },
     ],
-  });
-
-  const fadeIn = useSpring({
-    from: { opacity: 0, transform: "translateY(20px)" },
-    to: { opacity: 1, transform: "translateY(0)" },
   });
 
   const handleSubmit = (e) => {
@@ -85,8 +78,7 @@ const AddTeamForm = () => {
 
   return (
     <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
-      <NebulaBackground />
-      <animated.div style={fadeIn} className="relative z-10">
+      <div className="relative z-10">
         <h1 className="font-orbitron text-4xl md:text-5xl font-bold mb-8 text-center">
           <span className="text-gradient">Add a team member</span>
         </h1>
@@ -275,7 +267,7 @@ const AddTeamForm = () => {
             </form>
           </div>
         </div>
-      </animated.div>
+      </div>
     </div>
   );
 };

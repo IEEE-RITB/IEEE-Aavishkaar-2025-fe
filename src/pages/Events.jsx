@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { ArrowLeft } from "lucide-react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { eventsData, eventCategories } from "../configs/events.config";
 
 const Events = () => {
@@ -14,8 +12,7 @@ const Events = () => {
       : eventsData.filter((event) => event.category === activeCategory);
 
   return (
-    <main className="min-h-screen w-full bg-[#0D0D1A] text-white flex flex-col">
-      <Navbar />
+    <>
 
       {/* Header */}
       <section className="bg-gradient-to-r from-[#2E1E8A] to-[#4F33B3] py-16">
@@ -95,8 +92,7 @@ const Events = () => {
         </div>
       </section>
 
-      <Footer />
-    </main>
+    </>
   );
 };
 

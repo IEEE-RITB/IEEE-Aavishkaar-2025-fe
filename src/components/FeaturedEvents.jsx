@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { eventsData } from "../configs/events.config";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 const FeaturedEvents = () => {
   // Filter events that are marked as featured

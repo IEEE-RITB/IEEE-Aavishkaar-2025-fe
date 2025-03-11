@@ -1,25 +1,13 @@
-import React from 'react';
-import { useSpring, animated } from '@react-spring/web';
 import { ExternalLink } from 'lucide-react';
 
 // Import sponsors data from the JSON config file
 import sponsors from '../configs/sponsors.json';
 
-import NebulaBackground from '../components/NebulaBackground';
-
 const SponsorCard = ({ sponsor }) => {
-  const [props, set] = useSpring(() => ({
-    scale: 1,
-    rotateY: 0,
-    config: { mass: 5, tension: 500, friction: 80 },
-  }));
 
   return (
-    <animated.div
+    <div
       className="relative bg-black/40 backdrop-blur-lg rounded-lg overflow-hidden border border-neon-pink/30"
-      style={props}
-      onMouseEnter={() => set({ scale: 1.05, rotateY: 10 })}
-      onMouseLeave={() => set({ scale: 1, rotateY: 0 })}
     >
       <div className="absolute inset-0 bg-gradient-to-br from-neon-purple/10 to-neon-pink/10" />
       <div className="relative p-6 space-y-4">
@@ -44,20 +32,14 @@ const SponsorCard = ({ sponsor }) => {
           <ExternalLink className="w-4 h-4" />
         </button>
       </div>
-    </animated.div>
+    </div>
   );
 };
 
 const Sponsors = () => {
-  const fadeIn = useSpring({
-    from: { opacity: 0, transform: 'translateY(20px)' },
-    to: { opacity: 1, transform: 'translateY(0)' },
-  });
-
   return (
     <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
-      <NebulaBackground />
-      <animated.div style={fadeIn} className="relative z-10">
+      <div className="relative z-10">
         <h1 className="font-orbitron text-4xl md:text-5xl font-bold mb-8 text-center">
           <span className="text-gradient">Our Sponsors</span>
         </h1>
@@ -66,7 +48,7 @@ const Sponsors = () => {
             <SponsorCard key={index} sponsor={sponsor} />
           ))}
         </div>
-      </animated.div>
+      </div>
     </div>
   );
 };
