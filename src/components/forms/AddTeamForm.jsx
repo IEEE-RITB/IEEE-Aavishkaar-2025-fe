@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import { Send } from "lucide-react";
-import NebulaBackground from "../components/NebulaBackground";
+import NebulaBackground from "../NebulaBackground";
 
 const AddTeamForm = () => {
   const [formData, setFormData] = useState({
