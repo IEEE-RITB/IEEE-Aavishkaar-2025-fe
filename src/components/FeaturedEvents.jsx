@@ -1,82 +1,70 @@
-import React from 'react';
-import { useSpring, animated } from '@react-spring/web';
-import { useInView } from '@react-spring/web';
-import { Calendar, ArrowRight } from 'lucide-react';
-
-// Import the events data from the config file
-import events from '/src/configs/featured-events.json';
-
-const EventCard = ({ event }) => {
-  // Set up in-view detection for each card
-  const [ref, inView] = useInView({
-    triggerOnce: false, // Keep triggering animations every time the card enters the viewport
-    threshold: 0.5, // Trigger when 50% of the card is in view
-  });
-
-  // Define the animation for scale and opacity on scroll
-  const [props, set] = useSpring(() => ({
-    opacity: 0,
-    scale: 0.7,
-    config: { tension: 300, friction: 40 },
-  }));
-
-  React.useEffect(() => {
-    if (inView) {
-      set({ opacity: 1, scale: 1 });
-    } else {
-      set({ opacity: 0, scale: 0.7 });
-    }
-  }, [inView, set]);
-
-  return (
-    <animated.div ref={ref} style={props} className="relative group">
-      <div className="relative overflow-hidden rounded-xl bg-black/40 backdrop-blur-md border border-neon-pink/30">
-        <div className="absolute inset-0 bg-gradient-to-br from-neon-purple/20 to-neon-pink/20" />
-        <img
-          src={event.image}
-          alt={event.title}
-          className="w-full h-48 object-cover opacity-60 transition-transform group-hover:scale-110"
-        />
-        <div className="p-6 relative">
-          <h3 className="font-orbitron text-xl font-bold mb-2 text-gradient">
-            {event.title}
-          </h3>
-          <p className="text-gray-300 mb-4">{event.description}</p>
-          <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2">
-                <Calendar className="w-4 h-4 text-neon-pink" />
-                <span className="text-sm text-gray-400">{event.date}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </animated.div>
-  );
-};
+import { ArrowRight } from "lucide-react";
+import { eventsData } from "../configs/events.config";
+import { Link } from "react-router-dom";
 
 const FeaturedEvents = () => {
+  // Filter events that are marked as featured
+  const featuredEvents = eventsData.filter((event) => event.featured);
+
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="text-center mb-12">
-        <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-4">
-          <span className="text-gradient">Featured Events</span>
+    <section id="featured" className="px-8 md:px-16 lg:px-24 py-8 bg-[#0c0c18]">
+      <div className="mb-6 flex items-center justify-center">
+        <h2 className="text-3xl font-bold tracking-wide text-center text-white">
+          Featured Events
         </h2>
-        <p className="text-gray-300 max-w-2xl mx-auto">
-          Experience the future of technology with our cutting-edge events
-        </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {events.map((event, index) => (
-          <EventCard key={index} event={event} />
-        ))}
+
+      <div className="flex justify-center">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl">
+          {/* Event Cards */}
+          {featuredEvents.map((event) => (
+            <Link
+              to={`/events/${event.id}`}
+              key={event.id}
+              className="overflow-hidden rounded-lg bg-[#1e1e2d] hover:shadow-lg hover:shadow-[#4F33B3]/30 transition-all duration-300"
+            >
+              <div className="relative">
+                {/* Category Tag */}
+                <div className="absolute top-2 left-2 z-10">
+                  <span className="px-3 py-1 text-xs font-medium bg-[#ff3e9d] text-white rounded-full">
+                    {event.category}
+                  </span>
+                </div>
+
+                {/* Image */}
+                <div className="h-48">
+                  <img
+                    src={event.img}
+                    alt={event.title}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="p-4">
+                <h3 className="text-lg font-bold text-white">{event.title}</h3>
+                <div className="mt-2 text-sm font-medium text-white/80">
+                  {event.date}
+                </div>
+                <div className="mt-1 text-sm text-white/70">{event.venue}</div>
+                <p className="mt-3 text-sm text-white/60 line-clamp-3">
+                  {event.description}
+                </p>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
-      <div className="text-center mt-12">
-        <button className="neon-button group">
-          View All Events
-          <ArrowRight className="inline-block ml-2 group-hover:translate-x-1 transition-transform" />
-        </button>
+
+      <div className="mt-8 flex justify-center">
+        <Link
+          to="/events"
+          className="group flex items-center space-x-2 px-6 py-3 text-xl font-medium tracking-wide bg-gradient-to-r from-[#2E1E8A] to-[#4F33B3] rounded-lg hover:opacity-90 transition-opacity"
+        >
+          <span>View All Events</span>
+          <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+        </Link>
       </div>
     </section>
   );
