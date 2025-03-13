@@ -1,24 +1,18 @@
-import React from 'react';
-import { Link } from 'react-router';
-import {
-  Linkedin,
-  Instagram,
-  ArrowUp,
-  Mail,
-  MapPin,
-} from 'lucide-react';
+import React from "react";
+import { Link } from "react-router";
+import { Linkedin, Instagram, ArrowUp, Mail, MapPin } from "lucide-react";
 import ieeeData from "../configs/ieee-data.config.json";
 
 const Footer = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <footer className="mt-10 relative bg-black/60 backdrop-blur-md border-t border-neon-pink/30">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
-          {' '}
+          {" "}
           {/* Added text-center on mobile */}
           {/* About Section */}
           <div className="space-y-4">
@@ -26,7 +20,7 @@ const Footer = () => {
               to="/"
               className="flex items-center space-x-2 justify-center md:justify-start"
             >
-              {' '}
+              {" "}
               {/* Centered on mobile */}
               <span className="font-orbitron font-bold text-xl text-gradient">
                 Aavishkaar-2025
@@ -84,13 +78,13 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li className="flex items-center space-x-2 justify-center md:justify-start">
-                {' '}
+                {" "}
                 {/* Centered on mobile */}
                 <Mail className="w-4 h-4 text-neon-pink" />
                 <span className="text-gray-300">{ieeeData.email}</span>
               </li>
               <li className="flex items-center space-x-2 justify-center md:justify-start">
-                {' '}
+                {" "}
                 {/* Centered on mobile */}
                 <MapPin className="w-4 h-4 text-hacker-green" />
                 <span className="text-gray-300">{ieeeData.address}</span>
@@ -119,14 +113,14 @@ const Footer = () => {
               <a
                 href={ieeeData.socials.linkedin}
                 className="text-gray-300 hover:text-neon-pink transition-colors"
-                target='_blank'
+                target="_blank"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
                 href={ieeeData.socials.instagram}
                 className="text-gray-300 hover:text-neon-pink transition-colors"
-                target='_blank'
+                target="_blank"
               >
                 <Instagram className="w-6 h-6" />
               </a>
@@ -137,7 +131,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-neon-pink/30 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm text-center md:text-left">
-            {' '}
+            {" "}
             {/* Centered on mobile */}© 2025 TechFest. All rights reserved.
           </p>
           <button
