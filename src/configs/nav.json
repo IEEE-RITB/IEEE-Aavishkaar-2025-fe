@@ -5,6 +5,11 @@
     "icon": "Home"
   },
   {
+    "name": "About",
+    "path": "/about",
+    "icon": "Info"
+  },
+  {
     "name": "Events",
     "path": "/events",
     "icon": "Calendar"
