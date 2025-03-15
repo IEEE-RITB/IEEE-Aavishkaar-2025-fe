@@ -1,55 +1,80 @@
-import { ExternalLink } from 'lucide-react';
-
-// Import sponsors data from the JSON config file
-import sponsors from '../configs/sponsors.json';
-
-const SponsorCard = ({ sponsor }) => {
-
-  return (
-    <div
-      className="relative bg-black/40 backdrop-blur-lg rounded-lg overflow-hidden border border-neon-pink/30"
-    >
-      <div className="absolute inset-0 bg-gradient-to-br from-neon-purple/10 to-neon-pink/10" />
-      <div className="relative p-6 space-y-4">
-        <div className="aspect-video rounded-lg overflow-hidden mb-4">
-          <img
-            src={sponsor.logo}
-            alt={sponsor.name}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div>
-          <h3 className="font-orbitron text-xl font-bold text-gradient">
-            {sponsor.name}
-          </h3>
-          <span className="inline-block px-2 py-1 text-sm rounded bg-neon-pink/20 text-neon-pink">
-            {sponsor.tier}
-          </span>
-        </div>
-        <p className="text-gray-300">{sponsor.description}</p>
-        <button className="flex items-center space-x-2 text-neon-pink hover:text-electric-blue transition-colors">
-          <span>Visit Website</span>
-          <ExternalLink className="w-4 h-4" />
-        </button>
-      </div>
-    </div>
-  );
-};
+import { ExternalLink, Twitter, Linkedin, ArrowLeft } from "lucide-react";
+import { Link } from "react-router";
+import sponsors from "../configs/sponsors.json";
 
 const Sponsors = () => {
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
-      <div className="relative z-10">
-        <h1 className="font-orbitron text-4xl md:text-5xl font-bold mb-8 text-center">
-          <span className="text-gradient">Our Sponsors</span>
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-          {sponsors.map((sponsor, index) => (
-            <SponsorCard key={index} sponsor={sponsor} />
-          ))}
+    <>
+      {/* Header */}
+      <section className="bg-gradient-to-r from-[#2E1E8A] to-[#4F33B3] py-16">
+        <div className="container mx-auto px-4">
+          <Link
+            to="/"
+            className="inline-flex items-center text-white/80 hover:text-white transition-colors mb-6 mt-4"
+          >
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            Back to Home
+          </Link>
+          <h1 className="text-4xl md:text-5xl font-bold mt-4">All Sponsors</h1>
+          <p className="mt-4 text-lg text-white/80 max-w-2xl">
+            Meet the amazing sponsors behind Aavishkaar'25. From industry
+            leaders to tech innovators, they're here to make this event
+            possible.
+          </p>
         </div>
-      </div>
-    </div>
+      </section>
+
+      {/* Sponsors Grid */}
+      <section className="py-8 px-4 flex-1">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {sponsors.map((sponsor, index) => (
+              <div
+                key={index}
+                className="bg-[#1E1E2D] rounded-xl overflow-hidden hover:shadow-lg hover:shadow-[#4F33B3]/20 transition-shadow"
+              >
+                <div className="flex flex-col items-center p-8 h-full">
+                  <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-[#E056C1]/50 mb-6">
+                    <img
+                      src={sponsor.logo}
+                      alt={sponsor.name}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <span className="px-3 py-1 bg-[#E056C1] rounded-full text-xs font-medium mb-4">
+                    {sponsor.tier}
+                  </span>
+                  <h3 className="text-xl font-bold">{sponsor.name}</h3>
+                  <p className="mt-3 text-sm text-white/80">
+                    {sponsor.description}
+                  </p>
+                  <div className="flex justify-center space-x-6 mt-6">
+                    <a
+                      href={sponsor.twitter || "#"}
+                      className="text-white/70 hover:text-[#E056C1] transition-colors"
+                    >
+                      <Twitter className="h-5 w-5" />
+                    </a>
+                    <a
+                      href={sponsor.linkedin || "#"}
+                      className="text-white/70 hover:text-[#E056C1] transition-colors"
+                    >
+                      <Linkedin className="h-5 w-5" />
+                    </a>
+                    <a
+                      href={sponsor.website || "#"}
+                      className="text-white/70 hover:text-[#E056C1] transition-colors"
+                    >
+                      <ExternalLink className="h-5 w-5" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

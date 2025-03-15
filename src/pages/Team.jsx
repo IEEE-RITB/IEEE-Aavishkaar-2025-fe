@@ -1,10 +1,12 @@
+import { ArrowLeft } from "lucide-react";
+import { Link } from "react-router";
 import { teamMembers } from "../configs/team.config";
 
 const TeamCard = ({ member }) => {
   return (
-    <div className="bg-[#1a1a30] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
+    <div className="bg-[#1E1E2D] rounded-xl overflow-hidden hover:shadow-lg hover:shadow-[#4F33B3]/20 transition-shadow">
       <div className="p-6 space-y-4">
-        <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-[#ff47b7]">
+        <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-[#E056C1]/50">
           <img
             src={member.image}
             alt={member.name}
@@ -12,15 +14,15 @@ const TeamCard = ({ member }) => {
           />
         </div>
         <div className="text-center">
-          <h3 className="text-xl font-bold text-white">{member.name}</h3>
-          <p className="text-[#ff47b7]">{member.role}</p>
+          <h3 className="text-xl font-bold">{member.name}</h3>
+          <p className="text-[#E056C1]">{member.role}</p>
         </div>
-        <p className="text-gray-300 text-center">{member.bio}</p>
+        <p className="text-white/80 text-center text-sm">{member.bio}</p>
         <div className="flex justify-center space-x-4">
           {member.social.twitter && (
             <a
               href={member.social.twitter}
-              className="text-gray-400 hover:text-[#ff47b7] transition-colors"
+              className="text-white/70 hover:text-[#E056C1] transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -42,7 +44,7 @@ const TeamCard = ({ member }) => {
           {member.social.linkedin && (
             <a
               href={member.social.linkedin}
-              className="text-gray-400 hover:text-[#ff47b7] transition-colors"
+              className="text-white/70 hover:text-[#E056C1] transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -66,7 +68,7 @@ const TeamCard = ({ member }) => {
           {member.social.github && (
             <a
               href={member.social.github}
-              className="text-gray-400 hover:text-[#ff47b7] transition-colors"
+              className="text-white/70 hover:text-[#E056C1] transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -93,78 +95,37 @@ const TeamCard = ({ member }) => {
 
 const Team = () => {
   return (
-    <div className="min-h-screen">
-      {/* Header section */}
-      <div className="bg-[#4731a6] py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          {/* Back to Home button */}
-          <div className="mb-8">
-            <a
-              href="/"
-              className="text-white flex items-center hover:text-[#ff47b7] transition-colors"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="mr-2"
-              >
-                <path d="M19 12H5M12 19l-7-7 7-7" />
-              </svg>
-              Back to Home
-            </a>
-          </div>
-
-          {/* Team page title */}
-          <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white">
-              All Team
-            </h1>
-            <p className="text-gray-200 mt-2">
-              Meet the dedicated team behind Aavishkaar'25. From technical
-              experts to creative minds, we're here to make this event
-              exceptional.
-            </p>
-          </div>
+    <>
+      {/* Header */}
+      <section className="bg-gradient-to-r from-[#2E1E8A] to-[#4F33B3] py-16">
+        <div className="container mx-auto px-4">
+          <Link
+            to="/"
+            className="inline-flex items-center text-white/80 hover:text-white transition-colors mb-6 mt-4"
+          >
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            Back to Home
+          </Link>
+          <h1 className="text-4xl md:text-5xl font-bold mt-4">Our Team</h1>
+          <p className="mt-4 text-lg text-white/80 max-w-2xl">
+            Meet the dedicated team behind Aavishkaar'25. From technical
+            experts to creative minds, we're here to make this event
+            exceptional.
+          </p>
         </div>
-      </div>
+      </section>
 
-      {/* Content section */}
-      <div className="bg-[#121123] py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          {/* Filter buttons */}
-          <div className="flex justify-center mb-10">
-            <div className="inline-flex bg-[#1a1a30] rounded-full p-1 space-x-1">
-              <button className="px-4 py-2 rounded-full bg-[#ff47b7] text-white">
-                All
-              </button>
-              <button className="px-4 py-2 rounded-full text-white hover:bg-[#2a2a40] transition-colors">
-                Organizers
-              </button>
-              <button className="px-4 py-2 rounded-full text-white hover:bg-[#2a2a40] transition-colors">
-                Technical
-              </button>
-              <button className="px-4 py-2 rounded-full text-white hover:bg-[#2a2a40] transition-colors">
-                Volunteers
-              </button>
-            </div>
-          </div>
-
-          {/* Team grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Team Grid */}
+      <section className="py-8 px-4 flex-1">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {teamMembers.map((member, index) => (
               <TeamCard key={index} member={member} />
             ))}
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

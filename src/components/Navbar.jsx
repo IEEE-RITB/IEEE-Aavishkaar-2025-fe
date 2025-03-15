@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed w-full z-50 bg-transparent bg-opacity-30 backdrop-blur-lg backdrop-filter firefox:bg-opacity-30`}>
+    <nav className="fixed w-full z-50 bg-transparent bg-opacity-30 backdrop-blur-lg backdrop-filter firefox:bg-opacity-30">
       <div className="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-12">
         <Link to={"/"} className="flex items-center cursor-pointer">
           <img
@@ -73,10 +73,11 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       {isOpen && (
-        <div className="md:hidden glassmorphism">
+        <div className="md:hidden bg-transparent bg-opacity-30 backdrop-blur-lg backdrop-filter firefox:bg-opacity-30 border-t border-[#2E1E8A]">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <Link key={item.name} to={item.path}
+                onClick={() => setIsOpen(false)}
                 className="flex items-center space-x-2 w-full px-3 py-2 text-base font-rajdhani text-gray-300 hover:text-neon-pink transition-colors duration-300"
               >
                 {getIcon(item.icon)}

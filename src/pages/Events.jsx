@@ -19,7 +19,7 @@ const Events = () => {
         <div className="container mx-auto px-4">
           <Link
             to="/"
-            className="inline-flex items-center text-white/80 hover:text-white transition-colors mb-6"
+            className="inline-flex items-center text-white/80 hover:text-white transition-colors mb-6 mt-4"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Home

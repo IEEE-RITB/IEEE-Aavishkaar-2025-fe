@@ -67,9 +67,128 @@ const EventDetail = () => {
     return (
       <main className="min-h-screen w-full bg-[#0D0D1A] text-white flex flex-col">
         <Navbar />
-        <div className="flex-1 flex items-center justify-center">
-          <div className="w-16 h-16 border-4 border-[#E056C1] border-t-transparent rounded-full animate-spin"></div>
-        </div>
+        
+        {/* Hero Section Skeleton */}
+        <section className="relative">
+          <div className="bg-[#1E1E2D] h-64 w-full"></div>
+          <div className="relative container mx-auto px-4 py-16">
+            <div className="h-6 w-32 bg-[#1E1E2D] rounded-md mb-6 animate-pulse"></div>
+            
+            <div className="mt-8">
+              <div className="h-8 w-24 bg-[#1E1E2D] rounded-full mb-4 animate-pulse"></div>
+              <div className="h-12 w-3/4 bg-[#1E1E2D] rounded-md mb-4 animate-pulse"></div>
+              
+              <div className="mt-6 flex flex-wrap items-center gap-6">
+                <div className="h-6 w-48 bg-[#1E1E2D] rounded-md animate-pulse"></div>
+                <div className="h-6 w-40 bg-[#1E1E2D] rounded-md animate-pulse"></div>
+                <div className="h-6 w-32 bg-[#1E1E2D] rounded-md animate-pulse"></div>
+              </div>
+              
+              <div className="mt-8 max-w-3xl">
+                <div className="h-6 w-full bg-[#1E1E2D] rounded-md mb-3 animate-pulse"></div>
+                <div className="h-6 w-full bg-[#1E1E2D] rounded-md mb-3 animate-pulse"></div>
+                <div className="h-6 w-2/3 bg-[#1E1E2D] rounded-md animate-pulse"></div>
+              </div>
+              
+              <div className="mt-8">
+                <div className="h-12 w-40 bg-[#1E1E2D] rounded-lg animate-pulse"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Content Sections Skeleton */}
+        <section className="py-12 px-4">
+          <div className="container mx-auto max-w-4xl lg:max-w-6xl xl:max-w-7xl">
+            {/* Event Details Skeleton */}
+            <div className="mb-12">
+              <div className="flex items-center mb-6">
+                <div className="w-8 h-8 rounded-full bg-[#1E1E2D] mr-3 animate-pulse"></div>
+                <div className="h-8 w-40 bg-[#1E1E2D] rounded-md animate-pulse"></div>
+              </div>
+              <div className="bg-[#1E1E2D]/50 rounded-xl p-6 md:p-8 border border-[#4F33B3]/30">
+                <div className="h-6 w-full bg-[#1E1E2D] rounded-md mb-3 animate-pulse"></div>
+                <div className="h-6 w-full bg-[#1E1E2D] rounded-md mb-3 animate-pulse"></div>
+                <div className="h-6 w-full bg-[#1E1E2D] rounded-md mb-3 animate-pulse"></div>
+                <div className="h-6 w-3/4 bg-[#1E1E2D] rounded-md animate-pulse"></div>
+                
+                <div className="mt-8">
+                  <div className="h-7 w-24 bg-[#1E1E2D] rounded-md mb-4 animate-pulse"></div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="h-6 w-full bg-[#1E1E2D] rounded-md animate-pulse"></div>
+                    <div className="h-6 w-full bg-[#1E1E2D] rounded-md animate-pulse"></div>
+                    <div className="h-6 w-full bg-[#1E1E2D] rounded-md animate-pulse"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Rules Skeleton */}
+            <div className="mb-12">
+              <div className="flex items-center mb-6">
+                <div className="w-8 h-8 rounded-full bg-[#1E1E2D] mr-3 animate-pulse"></div>
+                <div className="h-8 w-56 bg-[#1E1E2D] rounded-md animate-pulse"></div>
+              </div>
+              <div className="bg-[#1E1E2D]/50 rounded-xl p-6 md:p-8 border border-[#4F33B3]/30">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  {[...Array(6)].map((_, i) => (
+                    <div key={i} className="flex items-start">
+                      <div className="w-6 h-6 rounded-full bg-[#1E1E2D] mr-3 flex-shrink-0 animate-pulse"></div>
+                      <div className="h-6 w-full bg-[#1E1E2D] rounded-md animate-pulse"></div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            
+            {/* FAQs Skeleton */}
+            <div className="mb-12">
+              <div className="flex items-center mb-6">
+                <div className="w-8 h-8 rounded-full bg-[#1E1E2D] mr-3 animate-pulse"></div>
+                <div className="h-8 w-64 bg-[#1E1E2D] rounded-md animate-pulse"></div>
+              </div>
+              <div className="bg-[#1E1E2D]/50 rounded-xl border border-[#4F33B3]/30 divide-y divide-[#4F33B3]/20">
+                {[...Array(3)].map((_, i) => (
+                  <div key={i} className="p-4 md:p-6">
+                    <div className="flex justify-between items-center">
+                      <div className="h-6 w-3/4 bg-[#1E1E2D] rounded-md animate-pulse"></div>
+                      <div className="h-6 w-6 bg-[#1E1E2D] rounded-md animate-pulse"></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            {/* Coordinators Skeleton */}
+            <div>
+              <div className="flex items-center mb-6">
+                <div className="w-8 h-8 rounded-full bg-[#1E1E2D] mr-3 animate-pulse"></div>
+                <div className="h-8 w-48 bg-[#1E1E2D] rounded-md animate-pulse"></div>
+              </div>
+              <div className="bg-[#1E1E2D]/50 rounded-xl p-6 md:p-8 border border-[#4F33B3]/30">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {[...Array(3)].map((_, i) => (
+                    <div key={i} className="p-4 bg-[#2E1E8A]/30 rounded-lg">
+                      <div className="h-6 w-3/4 bg-[#1E1E2D] rounded-md mb-3 animate-pulse"></div>
+                      <div className="h-5 w-1/2 bg-[#1E1E2D] rounded-md mb-2 animate-pulse"></div>
+                      <div className="h-5 w-1/2 bg-[#1E1E2D] rounded-md animate-pulse"></div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Register Banner Skeleton */}
+        <section className="py-12 px-4 bg-gradient-to-r from-[#2E1E8A]/50 to-[#4F33B3]/50 mt-12">
+          <div className="container mx-auto text-center">
+            <div className="h-8 w-64 bg-[#1E1E2D] rounded-md mx-auto mb-4 animate-pulse"></div>
+            <div className="h-6 w-full max-w-2xl mx-auto mb-8 bg-[#1E1E2D] rounded-md animate-pulse"></div>
+            <div className="h-12 w-48 bg-[#1E1E2D] rounded-lg mx-auto animate-pulse"></div>
+          </div>
+        </section>
+        
         <Footer />
       </main>
     );
@@ -79,7 +198,6 @@ const EventDetail = () => {
   if (!event || !eventDetails) {
     return (
       <main className="min-h-screen w-full bg-[#0D0D1A] text-white flex flex-col">
-        <Navbar />
         <div className="flex-1 flex flex-col items-center justify-center p-4">
           <h1 className="text-4xl font-bold mb-4">Event Not Found</h1>
           <p className="text-lg text-white/70 mb-8 text-center">
@@ -115,7 +233,7 @@ const EventDetail = () => {
         <div className="relative z-10 container mx-auto px-4 py-16">
           <Link
             to="/events"
-            className="inline-flex items-center text-white/80 hover:text-white transition-colors mb-6"
+            className="inline-flex items-center text-white/80 hover:text-white transition-colors mb-6 mt-4"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Events
@@ -337,8 +455,6 @@ const EventDetail = () => {
           </button>
         </div>
       </section>
-
-      <Footer />
     </main>
   );
 };
