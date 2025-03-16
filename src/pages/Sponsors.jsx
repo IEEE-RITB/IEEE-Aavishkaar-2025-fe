@@ -1,16 +1,12 @@
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink } from "lucide-react";
 
-// Import sponsors data from the JSON config file
-import sponsors from '../configs/sponsors.json';
+import sponsors from "../configs/sponsors.json";
 
 const SponsorCard = ({ sponsor }) => {
-
   return (
-    <div
-      className="relative bg-black/40 backdrop-blur-lg rounded-lg overflow-hidden border border-neon-pink/30"
-    >
+    <div className="relative bg-black/40 backdrop-blur-lg rounded-lg overflow-hidden border border-neon-pink/30 w-full">
       <div className="absolute inset-0 bg-gradient-to-br from-neon-purple/10 to-neon-pink/10" />
-      <div className="relative p-6 space-y-4">
+      <div className="relative p-8 space-y-4">
         <div className="aspect-video rounded-lg overflow-hidden mb-4">
           <img
             src={sponsor.logo}
@@ -43,7 +39,7 @@ const Sponsors = () => {
         <h1 className="font-orbitron text-4xl md:text-5xl font-bold mb-8 text-center">
           <span className="text-gradient">Our Sponsors</span>
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-8">
           {sponsors.map((sponsor, index) => (
             <SponsorCard key={index} sponsor={sponsor} />
           ))}

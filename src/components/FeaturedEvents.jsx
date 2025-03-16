@@ -1,10 +1,73 @@
 import { ArrowRight } from "lucide-react";
-import { eventsData } from "../configs/events.config";
 import { Link } from "react-router";
+import { useState, useEffect } from "react";
+import { eventImages } from "../configs/eventImages.config";
+import { API_ENDPOINTS } from "../configs/api.config";
 
 const FeaturedEvents = () => {
-  // Filter events that are marked as featured
-  const featuredEvents = eventsData.filter((event) => event.featured);
+  const [events, setEvents] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch(API_ENDPOINTS.EVENTS)
+      .then((response) => response.json())
+      .then((data) => {
+        const transformedEvents = data.map((event, index) => ({
+          id: event._id || `event-${index}`,
+          title: event.eventName,
+          category: event.eventTheme,
+          description: event.eventDescription,
+          date: event.eventTimeline.dates[0]
+            ? new Date(event.eventTimeline.dates[0]).toLocaleDateString(
+                "en-US",
+                {
+                  month: "long",
+                  day: "numeric",
+                  hour: "numeric",
+                  minute: "numeric",
+                  hour12: true,
+                }
+              )
+            : "Date TBA",
+          venue: event.eventVenue || "TBA",
+          img: eventImages[event.eventTheme] || eventImages.Robotics,
+        }));
+        setEvents(transformedEvents);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching events:", error);
+        setError("Failed to load events. Please try again later.");
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return (
+      <section
+        id="featured"
+        className="px-8 md:px-16 lg:px-24 py-8 bg-[#0c0c18]"
+      >
+        <div className="flex justify-center items-center h-64">
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#E056C1]"></div>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section
+        id="featured"
+        className="px-8 md:px-16 lg:px-24 py-8 bg-[#0c0c18]"
+      >
+        <div className="text-center text-red-500">{error}</div>
+      </section>
+    );
+  }
+
+  const featuredEvents = events.slice(0, 4);
 
   return (
     <section id="featured" className="px-8 md:px-16 lg:px-24 py-8 bg-[#0c0c18]">
@@ -14,14 +77,14 @@ const FeaturedEvents = () => {
         </h2>
       </div>
 
-      <div className="flex justify-center">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl">
+      <div className="flex justify-center  mx-auto">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {/* Event Cards */}
           {featuredEvents.map((event) => (
             <Link
               to={`/events/${event.id}`}
               key={event.id}
-              className="overflow-hidden rounded-lg bg-[#1e1e2d] hover:shadow-lg hover:shadow-[#4F33B3]/30 transition-all duration-300"
+              className="overflow-hidden rounded-lg bg-[#1e1e2d] hover:shadow-lg hover:shadow-[#4F33B3]/30 transition-all duration-300 lg:w-full"
             >
               <div className="relative">
                 {/* Category Tag */}

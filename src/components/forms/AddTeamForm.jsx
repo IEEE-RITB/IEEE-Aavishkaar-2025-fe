@@ -20,15 +20,12 @@ const AddTeamForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
     console.log(formData);
   };
 
-  // Handle input changes for all fields
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // Check if the field is nested (e.g., leader.name)
     if (name.includes(".")) {
       const [parent, child] = name.split(".");
       setFormData((prevState) => ({
@@ -39,7 +36,6 @@ const AddTeamForm = () => {
         },
       }));
     } else {
-      // Handle non-nested fields (e.g., teamName)
       setFormData((prevState) => ({
         ...prevState,
         [name]: value,
@@ -47,7 +43,6 @@ const AddTeamForm = () => {
     }
   };
 
-  // Handle changes for member fields
   const handleMemberChange = (index, e) => {
     const { name, value } = e.target;
     const updatedMembers = [...formData.members];
@@ -59,15 +54,12 @@ const AddTeamForm = () => {
     }));
   };
 
-  // Add a new member field
   const addMember = () => {
     setFormData((prevState) => ({
       ...prevState,
       members: [...prevState.members, { name: "", usn: "" }],
     }));
   };
-
-  // Remove a member field
   const removeMember = (index) => {
     const updatedMembers = formData.members.filter((_, i) => i !== index);
     setFormData((prevState) => ({
@@ -230,7 +222,6 @@ const AddTeamForm = () => {
                           required
                         />
                         <div className="flex justify-end space-x-4 mt-2">
-                          {/* Show "Remove Member" button only if there is more than one member */}
                           {formData.members.length > 1 && (
                             <button
                               type="button"
@@ -240,7 +231,7 @@ const AddTeamForm = () => {
                               Remove Member
                             </button>
                           )}
-                          {/* Show "Add Member" button only for the last member */}
+
                           {index === formData.members.length - 1 && (
                             <button
                               type="button"

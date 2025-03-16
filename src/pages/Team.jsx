@@ -98,7 +98,7 @@ const Team = () => {
       <div className="bg-[#4731a6] py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Back to Home button */}
-          <div className="mb-8">
+          {/* <div className="mb-8">
             <a
               href="/"
               className="text-white flex items-center hover:text-[#ff47b7] transition-colors"
@@ -119,11 +119,11 @@ const Team = () => {
               </svg>
               Back to Home
             </a>
-          </div>
+          </div> */}
 
           {/* Team page title */}
-          <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white">
+          <div className="py-10">
+            <h1 className="text-4xl md:text-5xl font-bold text-white ">
               All Team
             </h1>
             <p className="text-gray-200 mt-2">
@@ -140,17 +140,17 @@ const Team = () => {
         <div className="max-w-7xl mx-auto">
           {/* Filter buttons */}
           <div className="flex justify-center mb-10">
-            <div className="inline-flex bg-[#1a1a30] rounded-full p-1 space-x-1">
-              <button className="px-4 py-2 rounded-full bg-[#ff47b7] text-white">
+            <div className="inline-flex flex-wrap justify-center bg-[#1a1a30] rounded-full p-1 space-x-1 gap-1">
+              <button className="px-3 sm:px-4 py-2 rounded-full bg-[#ff47b7] text-white text-sm sm:text-base">
                 All
               </button>
-              <button className="px-4 py-2 rounded-full text-white hover:bg-[#2a2a40] transition-colors">
+              <button className="px-3 sm:px-4 py-2 rounded-full text-white hover:bg-[#2a2a40] transition-colors text-sm sm:text-base">
                 Organizers
               </button>
-              <button className="px-4 py-2 rounded-full text-white hover:bg-[#2a2a40] transition-colors">
+              <button className="px-3 sm:px-4 py-2 rounded-full text-white hover:bg-[#2a2a40] transition-colors text-sm sm:text-base">
                 Technical
               </button>
-              <button className="px-4 py-2 rounded-full text-white hover:bg-[#2a2a40] transition-colors">
+              <button className="px-3 sm:px-4 py-2 rounded-full text-white hover:bg-[#2a2a40] transition-colors text-sm sm:text-base">
                 Volunteers
               </button>
             </div>

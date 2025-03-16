@@ -1,47 +1,53 @@
-import { Link } from 'react-router';
-import { Calendar, Users, Building2, Users2, MessageSquare } from 'lucide-react';
+import { Link } from "react-router";
+import {
+  Calendar,
+  Users,
+  Building2,
+  Users2,
+  MessageSquare,
+} from "lucide-react";
 
 const navItems = [
   {
-    title: 'Events',
-    path: '/events',
+    title: "Events",
+    path: "/events",
     icon: <Calendar className="w-6 h-6" />,
-    description: 'Explore our upcoming tech events'
+    description: "Explore our upcoming tech events",
   },
   {
-    title: 'Schedule',
-    path: '/schedule',
+    title: "Schedule",
+    path: "/schedule",
     icon: <Calendar className="w-6 h-6" />,
-    description: 'View the complete event timeline'
+    description: "View the complete event timeline",
   },
   {
-    title: 'Sponsors',
-    path: '/sponsors',
+    title: "Sponsors",
+    path: "/sponsors",
     icon: <Building2 className="w-6 h-6" />,
-    description: 'Meet our technology partners'
+    description: "Meet our technology partners",
   },
   {
-    title: 'Team',
-    path: '/team',
+    title: "Team",
+    path: "/team",
     icon: <Users2 className="w-6 h-6" />,
-    description: 'Get to know our organizers'
+    description: "Get to know our organizers",
   },
   {
-    title: 'Contact',
-    path: '/contact',
+    title: "Contact",
+    path: "/contact",
     icon: <MessageSquare className="w-6 h-6" />,
-    description: 'Reach out to us'
-  }
+    description: "Reach out to us",
+  },
 ];
 
 const QuickNavCard = ({ item }) => {
   return (
     <Link to={item.path}>
-      <div
-        className="bg-black/40 backdrop-blur-md rounded-lg p-6 border border-neon-pink/30 hover:border-neon-pink/60 transition-colors"
-      >
+      <div className="bg-black/40 backdrop-blur-md rounded-lg p-6 border border-neon-pink/30 hover:border-neon-pink/60 transition-colors">
         <div className="text-neon-pink mb-4">{item.icon}</div>
-        <h3 className="font-orbitron text-xl font-bold mb-2 text-gradient">{item.title}</h3>
+        <h3 className="font-orbitron text-xl font-bold mb-2 text-gradient">
+          {item.title}
+        </h3>
         <p className="text-gray-300">{item.description}</p>
       </div>
     </Link>

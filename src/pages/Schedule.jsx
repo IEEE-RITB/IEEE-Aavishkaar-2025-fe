@@ -1,15 +1,11 @@
-import React from 'react';
-import { Clock, MapPin } from 'lucide-react';
+import React from "react";
+import { Clock, MapPin } from "lucide-react";
 
-// Import schedule data from the JSON config file
-import {schedule} from '../configs/schedule.json';
+import { schedule } from "../configs/schedule.json";
 
 const ScheduleCard = ({ event }) => {
-
   return (
-    <div
-      className="relative bg-black/40 border border-neon backdrop-blur-lg rounded-lg overflow-hidden border-l-0 border-r-0  border-neon-pink"
-    >
+    <div className="relative bg-black/40 border border-neon backdrop-blur-lg rounded-lg overflow-hidden border-l-0 border-r-0  border-neon-pink">
       <div className="p-6 space-y-4">
         <div className="flex justify-between items-start">
           <div>
