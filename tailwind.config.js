@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        "8xl": "90rem", // 1408px
+      },
       fontFamily: {
         orbitron: ["Orbitron", "sans-serif"],
         rajdhani: ["Rajdhani", "sans-serif"],
