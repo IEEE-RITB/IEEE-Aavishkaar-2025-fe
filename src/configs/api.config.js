@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_BASE_URL = "https://aavishkaar2025-be.onrender.com" || "http://localhost:8000";
 
 export const API_ENDPOINTS = {
   EVENTS: `${API_BASE_URL}/aavishkaar/events`,
