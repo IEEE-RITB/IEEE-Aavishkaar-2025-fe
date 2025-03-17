@@ -16,11 +16,9 @@ export default function App() {
       <BaseLayout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/events" element={<AddTeamForm/>} />
-          {/* <Route path="/events" element={<Events />} /> */}
-          <Route path="/events/:id" element={<EventDetail />}
-          />
-          <Route path="/events/:id/register" element={<AddTeamForm/>}></Route>
+          <Route path="/events" element={<Events />} />
+          <Route path="/events/:id/register" element={<AddTeamForm />} />
+          <Route path="/events/:id" element={<EventDetail />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/team" element={<Team />} />

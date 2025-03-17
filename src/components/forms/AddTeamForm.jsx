@@ -1,10 +1,18 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Send, Plus, Trash } from "lucide-react";
+import { useParams } from "react-router";
 
 const API_URL = "https://aavishkaar2025-be.onrender.com";
-
-const AddTeamForm = () => {
+// const eventOptions = [
+  //   { value: "coding", label: "Coding Event" },
+  //   { value: "robotics", label: "Robotics Competition" },
+  //   { value: "design", label: "Design Challenge" },
+  //   { value: "other", label: "Other" },
+  // ];
+  
+  const { id } = useParams();
+  const AddTeamForm = () => {
   const [formData, setFormData] = useState({
     teamName: "",
     leader: {
@@ -15,17 +23,18 @@ const AddTeamForm = () => {
     },
     members: [{ name: "", usn: "" }],
     description: "",
+    event: id, // New state for event selection
   });
   
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setError(null);
-    
+
     try {
       const response = await fetch(API_URL, {
         method: "POST",
@@ -102,7 +111,7 @@ const AddTeamForm = () => {
   return (
     <div className="min-h-screen bg-[#0F0F1B] font-sans">
       <div className="container max-w-2xl px-4 py-16 mx-auto">
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#8A2BE2] to-[#FF10F0] bg-clip-text text-transparent"
@@ -131,7 +140,7 @@ const AddTeamForm = () => {
           {/* Leader Section */}
           <div className="space-y-6 p-6 bg-[#1A1A2D]/50 rounded-xl border border-[#4F33B3]/30">
             <h2 className="text-2xl font-semibold text-[#8A2BE2]">Team Leader</h2>
-            
+
             {['name', 'email', 'contactNumber', 'usn'].map((field, idx) => (
               <motion.div
                 key={field}
@@ -190,7 +199,7 @@ const AddTeamForm = () => {
                     </div>
                   ))}
                 </div>
-                
+
                 {formData.members.length > 1 && (
                   <button
                     type="button"
@@ -202,7 +211,31 @@ const AddTeamForm = () => {
                 )}
               </motion.div>
             ))}
-          </div>
+           </div>
+          {/* <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="space-y-2"
+          >
+            <label className="text-[#E0E0FF] text-lg">Select Event</label>
+            <select
+              name="event"
+              value={formData.event}
+              onChange={handleChange}
+              required
+              className="w-full p-3 bg-[#1E1E2D] border-2 border-[#4F33B3]/50 rounded-lg text-[#E0E0FF] focus:border-[#8A2BE2] focus:ring-2 focus:ring-[#8A2BE2]/50 transition-all"
+            >
+              <option value="" disabled>
+                Select an event
+              </option>
+              {eventOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </motion.div> */}
+
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

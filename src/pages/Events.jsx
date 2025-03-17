@@ -16,16 +16,16 @@ const Events = () => {
 
       {/* Header */}
       <section className="bg-gradient-to-r from-[#2E1E8A] to-[#4F33B3] py-16">
-        <div className="container mx-auto px-4">
+        <div className="container px-4 mx-auto">
           <Link
             to="/"
-            className="inline-flex items-center text-white/80 hover:text-white transition-colors mb-6 mt-4"
+            className="inline-flex items-center mt-4 mb-6 transition-colors text-white/80 hover:text-white"
           >
-            <ArrowLeft className="h-4 w-4 mr-2" />
+            <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Home
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold mt-4">All Events</h1>
-          <p className="mt-4 text-lg text-white/80 max-w-2xl">
+          <h1 className="mt-4 text-4xl font-bold md:text-5xl">All Events</h1>
+          <p className="max-w-2xl mt-4 text-lg text-white/80">
             Explore all the exciting events happening at Aavishkaar'25. From
             technical competitions to cultural showcases, there's something for
             everyone.
@@ -34,9 +34,9 @@ const Events = () => {
       </section>
 
       {/* Category Filter */}
-      <section className="py-8 px-4">
+      <section className="px-4 py-8">
         <div className="container mx-auto">
-          <div className="flex flex-wrap gap-3 justify-center">
+          <div className="flex flex-wrap justify-center gap-3">
             {eventCategories.map((category) => (
               <button
                 key={category}
@@ -55,20 +55,20 @@ const Events = () => {
       </section>
 
       {/* Events Grid */}
-      <section className="py-8 px-4 flex-1">
+      <section className="flex-1 px-4 py-8">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {filteredEvents.map((event) => (
               <Link
                 to={`/events/${event.id}`}
                 key={event.id}
                 className="bg-[#1E1E2D] rounded-xl overflow-hidden hover:shadow-lg hover:shadow-[#4F33B3]/20 transition-shadow"
               >
-                <div className="h-48 relative">
+                <div className="relative h-48">
                   <img
                     src={event.img}
                     alt={event.title}
-                    className="h-full w-full object-cover"
+                    className="object-cover w-full h-full"
                   />
                   <div className="absolute top-3 left-3">
                     <span className="px-3 py-1 bg-[#E056C1] rounded-full text-xs font-medium">

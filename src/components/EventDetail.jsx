@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, Link } from "react-router";
+import { useParams, Link, useNavigate } from "react-router";
 import {
   ArrowLeft,
   Clock,
@@ -24,14 +24,11 @@ const EventDetail = () => {
   const [faqs, setFaqs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [expandedFaq, setExpandedFaq] = useState(null);
-  const handleRegister=()=>{
-    return(
-      <Link to="/register"
-        className="px-6 py-3 bg-gradient-to-r from-[#E056C1] to-[#4F33B3] rounded-lg text-lg font-bold"
-      >
-      </Link>
-    )
-  }
+  //   const nav=useNavigate()
+  //   const handleRegister=()=>{
+  //     return(
+  //       nav('/events/register')
+  // )    }
   useEffect(() => {
     // Find the event with the matching ID from the config files
     const fetchEventData = () => {
@@ -74,36 +71,36 @@ const EventDetail = () => {
     return (
       <main className="min-h-screen w-full bg-[#0D0D1A] text-white flex flex-col">
         <Navbar />
-        
+
         {/* Hero Section Skeleton */}
         <section className="relative">
           <div className="bg-[#1E1E2D] h-64 w-full"></div>
           <div className="container relative px-4 py-16 mx-auto">
             <div className="h-6 w-32 bg-[#1E1E2D] rounded-md mb-6 animate-pulse"></div>
-            
+
             <div className="mt-8">
               <div className="h-8 w-24 bg-[#1E1E2D] rounded-full mb-4 animate-pulse"></div>
               <div className="h-12 w-3/4 bg-[#1E1E2D] rounded-md mb-4 animate-pulse"></div>
-              
+
               <div className="flex flex-wrap items-center gap-6 mt-6">
                 <div className="h-6 w-48 bg-[#1E1E2D] rounded-md animate-pulse"></div>
                 <div className="h-6 w-40 bg-[#1E1E2D] rounded-md animate-pulse"></div>
                 <div className="h-6 w-32 bg-[#1E1E2D] rounded-md animate-pulse"></div>
               </div>
-              
+
               <div className="max-w-3xl mt-8">
                 <div className="h-6 w-full bg-[#1E1E2D] rounded-md mb-3 animate-pulse"></div>
                 <div className="h-6 w-full bg-[#1E1E2D] rounded-md mb-3 animate-pulse"></div>
                 <div className="h-6 w-2/3 bg-[#1E1E2D] rounded-md animate-pulse"></div>
               </div>
-              
+
               <div className="mt-8">
                 <div className="h-12 w-40 bg-[#1E1E2D] rounded-lg animate-pulse"></div>
               </div>
             </div>
           </div>
         </section>
-        
+
         {/* Content Sections Skeleton */}
         <section className="px-4 py-12">
           <div className="container max-w-4xl mx-auto lg:max-w-6xl xl:max-w-7xl">
@@ -118,7 +115,7 @@ const EventDetail = () => {
                 <div className="h-6 w-full bg-[#1E1E2D] rounded-md mb-3 animate-pulse"></div>
                 <div className="h-6 w-full bg-[#1E1E2D] rounded-md mb-3 animate-pulse"></div>
                 <div className="h-6 w-3/4 bg-[#1E1E2D] rounded-md animate-pulse"></div>
-                
+
                 <div className="mt-8">
                   <div className="h-7 w-24 bg-[#1E1E2D] rounded-md mb-4 animate-pulse"></div>
                   <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -129,7 +126,7 @@ const EventDetail = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Rules Skeleton */}
             <div className="mb-12">
               <div className="flex items-center mb-6">
@@ -147,7 +144,7 @@ const EventDetail = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* FAQs Skeleton */}
             <div className="mb-12">
               <div className="flex items-center mb-6">
@@ -165,7 +162,7 @@ const EventDetail = () => {
                 ))}
               </div>
             </div>
-            
+
             {/* Coordinators Skeleton */}
             <div>
               <div className="flex items-center mb-6">
@@ -186,7 +183,7 @@ const EventDetail = () => {
             </div>
           </div>
         </section>
-        
+
         {/* Register Banner Skeleton */}
         <section className="py-12 px-4 bg-gradient-to-r from-[#2E1E8A]/50 to-[#4F33B3]/50 mt-12">
           <div className="container mx-auto text-center">
@@ -195,7 +192,7 @@ const EventDetail = () => {
             <div className="h-12 w-48 bg-[#1E1E2D] rounded-lg mx-auto animate-pulse"></div>
           </div>
         </section>
-        
+
         <Footer />
       </main>
     );
@@ -283,11 +280,9 @@ const EventDetail = () => {
             </div>
 
             <div className="mt-8">
-              <button onClick={handleRegister} 
-              className="px-8 py-4 bg-gradient-to-r from-[#E056C1] to-[#4F33B3] rounded-lg text-lg font-bold hover:opacity-90 transition-opacity transform hover:scale-105 duration-200">
-                Register Now
-              </button>
-            </div>
+              <Link to={`/events/${id}/register`} className="px-8 py-4 bg-[#E056C1] rounded-lg text-lg font-bold hover:opacity-90 transition-opacity transform hover:scale-105 duration-200">
+                Register for {event.title}
+              </Link></div>
           </motion.div>
         </div>
       </section>
@@ -458,9 +453,9 @@ const EventDetail = () => {
             Don't miss this opportunity to showcase your skills, learn from
             peers, and win exciting prizes.
           </p>
-          <button className="px-8 py-4 bg-[#E056C1] rounded-lg text-lg font-bold hover:opacity-90 transition-opacity transform hover:scale-105 duration-200">
+          <Link to={`/events/${id}/register`} className="px-8 py-4 bg-[#E056C1] rounded-lg text-lg font-bold hover:opacity-90 transition-opacity transform hover:scale-105 duration-200">
             Register for {event.title}
-          </button>
+          </Link>
         </div>
       </section>
     </main>
