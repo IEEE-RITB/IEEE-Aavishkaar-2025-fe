@@ -181,10 +181,10 @@ const Hero = () => {
             <canvas ref={numberCanvasRef} className="absolute top-0 left-0 z-20"></canvas>
             <canvas ref={dotsCanvasRef} className="absolute top-0 left-0 z-30"></canvas>
           </div>
-          <h3 className="text-3xl font-bold tracking-wider md:text-1xl mb-10">Days to go</h3>
-          <h1 className="text-5xl mb-15 font-bold tracking-wider md:text-7xl">Aavishkaar'25</h1>
+          <h3 className="text-3xl font-bold tracking-wider md:text-1xl mb-5">Days to go</h3>
+          <h1 className="text-5xl mb-6 font-bold tracking-wider md:text-7xl">Aavishkaar'25</h1>
           <div className="mt-6 flex items-center justify-center">
-            <a href="#featured" className="group flex items-center space-x-2 text-xl font-medium tracking-wide">
+            <a href="#featured" className="group flex items-center mt-2 space-x-2 text-xl font-medium tracking-wide">
               <span>REGISTER NOW</span>
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </a>
