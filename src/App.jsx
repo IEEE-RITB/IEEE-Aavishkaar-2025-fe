@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import { BaseLayout } from "./layouts/base-layout";
 import ScrollToTop from "./utils/scroll-to-top";
 import Sponsors from "./pages/Sponsors";
+import AddTeamForm from "./components/forms/AddTeamForm";
 
 export default function App() {
   return (
@@ -15,8 +16,11 @@ export default function App() {
       <BaseLayout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/events/:id" element={<EventDetail />} />
+          <Route path="/events" element={<AddTeamForm/>} />
+          {/* <Route path="/events" element={<Events />} /> */}
+          <Route path="/events/:id" element={<EventDetail />}
+          />
+          <Route path="/events/:id/register" element={<AddTeamForm/>}></Route>
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/team" element={<Team />} />
