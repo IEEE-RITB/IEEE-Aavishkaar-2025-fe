@@ -9,7 +9,7 @@ const AnimatedFooter = () => {
             {[...Array(6)].map((_, j) => (
               <div key={j} className="flex items-center flex-nowrap">
                 <span className="mx-2 md:mx-4 text-sm md:text-xl font-bold text-[#E056C1]">
-                  AAVISHKAAR 2025
+                  RIT-B TechFest
                 </span>
                 <Star className="mx-2 md:mx-4 h-4 w-4 md:h-5 md:w-5 text-white" />
               </div>

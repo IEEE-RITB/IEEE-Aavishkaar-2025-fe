@@ -6,6 +6,7 @@ import {
   ArrowUp,
   Mail,
   MapPin,
+  Github,
 } from 'lucide-react';
 import ieeeData from "../configs/ieee-data.config.json";
 
@@ -24,7 +25,7 @@ const Footer = () => {
               className="flex items-center space-x-2 justify-center md:justify-start"
             >
               <span className="font-orbitron font-bold text-xl text-gradient">
-                Aavishkaar-2025
+                RIT-B TechFest-2025
               </span>
             </Link>
             <p className="text-gray-300">
@@ -105,6 +106,13 @@ const Footer = () => {
                 target='_blank'
               >
                 <Instagram className="w-6 h-6" />
+              </a>
+              <a
+                href={ieeeData.socials.github}
+                className="text-gray-300 hover:text-neon-pink transition-colors"
+                target='_blank'
+              >
+                <Github className="w-6 h-6" />
               </a>
             </div>
           </div>

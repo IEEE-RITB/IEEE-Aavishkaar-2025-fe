@@ -45,14 +45,14 @@ const Navbar = () => {
             className="w-10 h-auto"
           />
           <span className="font-orbitron font-bold text-xl text-gradient ml-2">
-            Aavishkaar
+            RIT-B TechFest
           </span>
         </Link>
         <div className="hidden md:flex md:items-center">
           <div className="flex items-center">
             {navItems.map((item, index) => (
               <Link key={item.name} to={item.path}
-                className={`font-rajdhani text-gray-300 hover:text-neon-pink transition-colors duration-300 px-4`}
+                className={`font-rajdhani text-gray-300 hover:text-neon-pink transition-colors duration-300 px-4 hover-underline`}
               >
                 {item.name}
               </Link>
