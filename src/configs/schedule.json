@@ -1,29 +1,161 @@
 {
-  "startDate": "March 29, 2025",
+  "startDate": "09:00 AM March 28, 2025",
   "schedule": [
     {
-      "time": "09:00 AM",
-      "date": "April 15, 2025",
-      "title": "Opening Ceremony",
-      "location": "Main Stage",
-      "speaker": "Dr. Sarah Chen",
-      "attendees": 1000
+      "time": "09:30 AM",
+      "date": "March 28, 2025",
+      "title": "Innaugration",
+      "location": "ESB Seminar Hall 1 (Big)"
     },
     {
-      "time": "10:30 AM",
-      "date": "April 15, 2025",
-      "title": "Future of AI Panel",
-      "location": "Tech Hub",
-      "speaker": "Various Industry Leaders",
-      "attendees": 500
+      "time": "10:00 AM - 02:00 PM",
+      "date": "March 28, 2025",
+      "title": "Tech Escape Room",
+      "location": "CRD 301, 302 Data Engineering Lab"
     },
     {
-      "time": "02:00 PM",
-      "date": "April 15, 2025",
-      "title": "VR Workshop",
-      "location": "Innovation Lab",
-      "speaker": "James Rodriguez",
-      "attendees": 200
+      "time": "12:30 PM - 05:30 PM",
+      "date": "March 28, 2025",
+      "title": "I Spy",
+      "location": "ESB Seminar Hall 1 (Quadrangle and blocks, ESB 212 Lab, 2 Labs above ESB Library)"
+    },
+    {
+      "time": "10:00 AM - 12:00 PM",
+      "date": "March 28, 2025",
+      "title": "Murder Inquest",
+      "location": "CRE Lab - ESB 205"
+    },
+    {
+      "time": "10:00 AM - 02:00 PM",
+      "date": "March 28, 2025",
+      "title": "Build Master",
+      "location": "Civil Dept Corridor, ESB 2nd Floor"
+    },
+    {
+      "time": "10:00 AM - 02:00 PM",
+      "date": "March 29, 2025",
+      "title": "Aerovision",
+      "location": "ESB Lab 414"
+    },
+    {
+      "time": "10:00 AM - 02:00 PM",
+      "date": "March 28, 2025",
+      "title": "Network Strategies",
+      "location": "LHC 507"
+    },
+    {
+      "time": "10:00 AM - 01:00 PM",
+      "date": "March 28, 2025",
+      "title": "Zenith",
+      "location": "R1, R3: ESB 217, 218; R3: CAD Lab"
+    },
+    {
+      "time": "01:00 PM - 04:00 PM",
+      "date": "March 28, 2025",
+      "title": "Squid Game",
+      "location": "ISE Lab 1"
+    },
+    {
+      "time": "01:00 PM - 03:00 PM",
+      "date": "March 28, 2025",
+      "title": "Sketch for a Cause",
+      "location": "Near Chemical Dept Corridor, 1st Floor, ESB"
+    },
+    {
+      "time": "01:00 PM - 03:00 PM",
+      "date": "March 28, 2025",
+      "title": "Mutant Madness",
+      "location": "ESB 530"
+    },
+    {
+      "time": "01:00 PM - 03:00 PM",
+      "date": "March 28, 2025",
+      "title": "Waves Quest",
+      "location": "DES High Tech Seminar"
+    },
+    {
+      "time": "02:00 PM - 05:00 PM",
+      "date": "March 28, 2025",
+      "title": "Technovision",
+      "location": "ESB 329, 330"
+    },
+    {
+      "time": "10:00 AM - 02:00 PM",
+      "date": "March 28, 2025",
+      "title": "Codepoly",
+      "location": "CSE Lab 1, R3: Canteen Centre Platform"
+    },
+    {
+      "time": "01:00 PM - 04:00 PM",
+      "date": "March 28, 2025",
+      "title": "Tug of War",
+      "location": "R1: LHC Seminar Hall 1 (CS Lab-2)"
+    },
+    {
+      "time": "09:00 AM - 01:00 PM",
+      "date": "March 29, 2025",
+      "title": "IntelliLibrary",
+      "location": "AIML Lab, Apex"
+    },
+    {
+      "time": "09:00 AM - 01:00 PM",
+      "date": "March 29, 2025",
+      "title": "Synapse Showdown",
+      "location": "MBA Computer Lab, ESB, Near Biotech Dept"
+    },
+    {
+      "time": "09:00 AM - 01:00 PM",
+      "date": "March 29, 2025",
+      "title": "Chamber of Secrets",
+      "location": "R1: CSE-AIML (CSE-CY Lab)"
+    },
+    {
+      "time": "09:00 AM - 01:00 PM",
+      "date": "March 29, 2025",
+      "title": "Minecraft Expedition",
+      "location": "ESB 212"
+    },
+    {
+      "time": "09:00 AM - 12:00 PM",
+      "date": "March 29, 2025",
+      "title": "Shark Tank",
+      "location": "ESB Seminar Hall 2"
+    },
+    {
+      "time": "09:00 AM - 01:00 PM",
+      "date": "March 29, 2025",
+      "title": "404: Murder Not Found",
+      "location": "Medical Software Lab LHC-105"
+    },
+    {
+      "time": "09:00 AM - 01:00 PM",
+      "date": "March 29, 2025",
+      "title": "SensorBot",
+      "location": "ESB 216, 217 Classrooms"
+    },
+    {
+      "time": "02:00 PM - 04:00 PM",
+      "date": "March 29, 2025",
+      "title": "Rocket League",
+      "location": "Quadrangle"
+    },
+    {
+      "time": "01:00 PM - 04:00 PM",
+      "date": "March 29, 2025",
+      "title": "BrainStorm",
+      "location": "DES High Tech Seminar"
+    },
+    {
+      "time": "01:00 PM - 04:00 PM",
+      "date": "March 29, 2025",
+      "title": "Think Tank",
+      "location": "ESB Seminar Hall 2"
+    },
+    {
+      "time": "01:00 PM - 04:00 PM",
+      "date": "March 28, 2025",
+      "title": "Man v/s AI",
+      "location": "MCA Lab"
     }
   ]
 }

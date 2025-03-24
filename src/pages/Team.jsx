@@ -108,7 +108,7 @@ const Team = () => {
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mt-4">Our Team</h1>
           <p className="mt-4 text-lg text-white/80 max-w-2xl">
-            Meet the dedicated team behind Aavishkaar'25. From technical
+            Meet the dedicated team behind RIT Techfest. From technical
             experts to creative minds, we're here to make this event
             exceptional.
           </p>

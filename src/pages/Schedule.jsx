@@ -38,10 +38,10 @@ const EventCard = ({ event }) => {
             {event.title}
           </h3>
           
-          <div className="flex items-center mt-2 space-x-1">
+          {/* <div className="flex items-center mt-2 space-x-1">
             <Users className="w-4 h-4 text-[#E056C1]" />
             <p className="text-white/80 font-medium">{event.speaker}</p>
-          </div>
+          </div> */}
           
           <div className="flex items-center mt-3 text-sm text-white/70">
             <MapPin className="w-4 h-4 text-[#4F33B3] mr-2" />

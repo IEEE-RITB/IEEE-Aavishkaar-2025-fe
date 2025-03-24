@@ -87,7 +87,7 @@ const Events = () => {
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mt-4">All Events</h1>
           <p className="mt-4 text-lg text-white/80 max-w-2xl">
-            Explore all the exciting events happening at Aavishkaar'25. From
+            Explore all the exciting events happening at RIT Techfest. From
             technical competitions to cultural showcases, there's something for
             everyone.
           </p>

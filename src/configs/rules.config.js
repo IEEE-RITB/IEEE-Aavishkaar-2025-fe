@@ -1,6 +1,6 @@
 export const rulesTemplate = [
   "Each team must consist of 2-4 members.",
-  "All team members must be registered for Aavishkaar'25.",
+  "All team members must be registered for RIT Techfest.",
   "Projects must be started from scratch during the event.",
   "Teams may use open-source libraries and APIs.",
   "Code must be submitted to the designated repository by the deadline.",

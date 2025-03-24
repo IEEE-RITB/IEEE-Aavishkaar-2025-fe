@@ -111,6 +111,7 @@ const Countdown = () => {
     const updateCountdown = () => {
       try {
         const startDate = new Date(scheduleData.startDate);
+        console.log(startDate);
 
         // Get current date in IST (UTC+5:30)
         const now = new Date();

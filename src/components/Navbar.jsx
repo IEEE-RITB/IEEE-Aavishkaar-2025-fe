@@ -43,25 +43,29 @@ const Navbar = () => {
     };
 
     // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Cleanup listener on component unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <nav className={`
+    <nav
+      className={`
       w-full z-50 transition-all duration-300 bg-transparent
-      ${isScrolled 
-        ? 'fixed bg-opacity-30 backdrop-blur-lg backdrop-filter firefox:bg-opacity-30' 
-        : 'absolute'
+      ${
+        isScrolled
+          ? "fixed bg-opacity-30 backdrop-blur-lg backdrop-filter firefox:bg-opacity-30"
+          : "absolute"
       }
-    `}>
+    `}
+    >
       <div className="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-12">
         {/* Logo Section */}
         <Link to={"/"} className="flex items-center cursor-pointer">
+          {/* <img src="/logo.png" alt="Description" className="w-10 h-auto" /> */}
           <span className="font-orbitron font-bold text-xl ml-2">
             RIT TechFest
           </span>
@@ -95,14 +99,17 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       {isOpen && (
-        <div className={`
+        <div
+          className={`
           md:hidden 
-          ${isScrolled 
-            ? 'bg-white/30 backdrop-blur-lg shadow-lg' 
-            : 'bg-transparent'
+          ${
+            isScrolled
+              ? "bg-white/30 backdrop-blur-lg shadow-lg"
+              : "bg-transparent"
           } 
           border-t border-[#2E1E8A]
-        `}>
+        `}
+        >
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <Link

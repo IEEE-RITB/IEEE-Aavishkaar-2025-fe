@@ -20,7 +20,7 @@ const Sponsors = () => {
             Our Sponsors
           </h1>
           <p className="mt-4 text-lg text-white/80">
-            Meet the amazing sponsors behind Aavishkaar'25. From industry
+            Meet the amazing sponsors behind RIT Techfest. From industry
             leaders to tech innovators, they are making this event possible.
           </p>
         </div>
