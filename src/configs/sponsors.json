@@ -2,14 +2,14 @@
   {
     "name": "Niedax Group",
     "tier": "Platinum",
-    "logo": "https://github.com/IEEE-RITB/IEEE-Aavishkaar-2025-fe/blob/836535822d60fe161c27d6aa77d638d3e7ecb2b1/src/assets/Niedax.png?w=400&fit=crop",
+    "logo": "https://github.com/IEEE-RITB/IEEE-Aavishkaar-2025-fe/raw/836535822d60fe161c27d6aa77d638d3e7ecb2b1/src/assets/Niedax.png",
     "description": "Industry Partner"
   },
   {
     "name": "Red Bull",
     "tier": "Gold",
-    "logo": "https://github.com/IEEE-RITB/IEEE-Aavishkaar-2025-fe/blob/836535822d60fe161c27d6aa77d638d3e7ecb2b1/src/assets/Red-Bull-logo.png?w=400&fit=crop",
+    "logo": "https://github.com/IEEE-RITB/IEEE-Aavishkaar-2025-fe/raw/836535822d60fe161c27d6aa77d638d3e7ecb2b1/src/assets/Red-Bull-logo.png?w=400&fit=crop?raw=true",
     "description": "Beverage Partner"
-  },
+  }
  
 ]
