@@ -1,20 +1,15 @@
 [
   {
-    "name": "TechChjorp Industries",
+    "name": "Niedax Group",
     "tier": "Platinum",
-    "logo": "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=400&fit=crop",
-    "description": "Leading provider of cybernetic enhancements"
+    "logo": "https://github.com/IEEE-RITB/IEEE-Aavishkaar-2025-fe/blob/836535822d60fe161c27d6aa77d638d3e7ecb2b1/src/assets/Niedax.png?w=400&fit=crop",
+    "description": "Industry Partner"
   },
   {
-    "name": "Neural Networks Inc",
+    "name": "Red Bull",
     "tier": "Gold",
-    "logo": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=400&fit=crop",
-    "description": "Pioneering AI research and development"
+    "logo": "https://github.com/IEEE-RITB/IEEE-Aavishkaar-2025-fe/blob/836535822d60fe161c27d6aa77d638d3e7ecb2b1/src/assets/Red-Bull-logo.png?w=400&fit=crop",
+    "description": "Beverage Partner"
   },
-  {
-    "name": "Quantum Solutions",
-    "tier": "Gold",
-    "logo": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&fit=crop",
-    "description": "Next-generation quantum computing"
-  }
+ 
 ]
