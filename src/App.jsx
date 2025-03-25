@@ -25,7 +25,7 @@ export default function App() {
             }
           />
           <Route path="/events" element={<Events />} />
-          <Route path="/events/:id" element={<EventDetail />} />
+          <Route path="/events/:slug" element={<EventDetail />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/team" element={<Team />} />

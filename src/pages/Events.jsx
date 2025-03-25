@@ -17,6 +17,7 @@ const Events = () => {
         // console.log("Fetched events:", data);
         const transformedEvents = data.map((event, index) => ({
           id: event.id,
+          slug: event.slug,
           title: event.eventName,
           category: event.eventTheme,
           description: event.eventDescription,
@@ -121,7 +122,7 @@ const Events = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredEvents.map((event) => (
               <Link
-                to={event.id}
+                to={event.slug}
                 key={event.id}
                 className="bg-[#1E1E2D] rounded-xl overflow-hidden hover:shadow-lg hover:shadow-[#4F33B3]/20 transition-shadow"
               >

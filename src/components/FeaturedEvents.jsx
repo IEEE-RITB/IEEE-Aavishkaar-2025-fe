@@ -19,6 +19,7 @@ const FeaturedEvents = () => {
         // console.log("Fetched events:", data);
         const transformedEvents = data.map((event, index) => ({
           id: event.id,
+          slug: event.slug,
           img:
             event.img || eventImages[event.eventTheme] || eventImages.Robotics,
           title: event.eventName,
@@ -85,7 +86,7 @@ const FeaturedEvents = () => {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {events.map((event) => (
             <Link
-              to={`/events/${event.id}`}
+              to={`/events/${event.slug}`}
               key={event.id}
               className="w-full overflow-hidden rounded-lg bg-[#1e1e2d] hover:shadow-lg hover:shadow-[#4F33B3]/30 transition-all duration-300"
             >

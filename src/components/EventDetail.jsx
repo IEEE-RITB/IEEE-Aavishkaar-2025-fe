@@ -18,7 +18,7 @@ import { getRules } from "../configs/rules.config";
 import { getFaqs } from "../configs/faqs.config";
 
 const EventDetail = () => {
-  const { id } = useParams();
+  const { slug } = useParams();
   const [event, setEvent] = useState(null);
   const [eventDetails, setEventDetails] = useState(null);
   const [defaultDetails, setDefaultDetails] = useState(null);
@@ -55,10 +55,12 @@ const EventDetail = () => {
       return `${position}${suffix} Place: ₹${amount.toLocaleString()}`;
     });
   };
+  // console.log(slug)
+
 
   // Integrate the API fetching logic
   useEffect(() => {
-    fetch(API_ENDPOINTS.EVENT_DETAIL(id))
+    fetch(API_ENDPOINTS.EVENT_DETAIL(slug))
       .then((response) => {
         if (!response.ok) {
           throw new Error(`API responded with status ${response.status}`);
@@ -79,6 +81,7 @@ const EventDetail = () => {
 
         // Create the complete details by merging, prioritizing API data
         const completeDetails = {
+          id: data.eventId,
           title: data.eventName || defaultEventData.title,
           description: data.eventDescription || defaultEventData.description,
           timeline: data.eventTimeline || defaultEventData.timeline,
@@ -122,7 +125,9 @@ const EventDetail = () => {
         console.error("Error fetching event details:", error);
         setLoading(false);
       });
-  }, [id]);
+  }, [slug]);
+
+  // console.log(eventDetails)
 
   if (loading) {
     return (
@@ -335,7 +340,7 @@ const EventDetail = () => {
 
             <div className="mt-8">
               <Link
-                to={`/${id}/teamregister`}
+                to={`/${eventDetails?.id}/teamregister`}
                 className="px-8 py-4 bg-gradient-to-r from-[#E056C1] to-[#4F33B3] rounded-lg text-lg font-bold hover:opacity-90 transition-opacity transform hover:scale-105 duration-200"
               >
                 Register Now
@@ -346,8 +351,8 @@ const EventDetail = () => {
       </section>
 
       {/* Tabs Section */}
-      <section className="py-12 px-4">
-        <div className="container px-4 sm:px-6 lg:px-12">
+      <section className="py-12 px-4 sm:px-6 lg:px-12">
+        <div className="container px-4">
           {/* Event Details */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -513,7 +518,7 @@ const EventDetail = () => {
             peers, and win exciting prizes.
           </p>
           <Link
-            to={`/${id}/teamregister`}
+            to={`/${eventDetails?.id}/teamregister`}
             className="px-8 py-4 bg-[#E056C1] rounded-lg text-lg font-bold hover:opacity-90 transition-opacity transform hover:scale-105 duration-200"
           >
             Register for {event?.title}

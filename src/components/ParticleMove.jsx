@@ -29,7 +29,7 @@ const ParticleMove = () => {
         // Resize and generate dots
         resizeCanvas();
         const dots = [];
-        const dotCount = 500;
+        const dotCount = 300;
 
         const randomNumber = (min, max) =>
             Math.floor(Math.random() * (max - min) + min);
