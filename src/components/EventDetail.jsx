@@ -101,9 +101,10 @@ const EventDetail = () => {
               {
                 month: "long",
                 day: "numeric",
-                hour: "numeric",
-                minute: "numeric",
-                hour12: true,
+                year: "numeric",
+                // hour: "numeric",
+                // minute: "numeric",
+                // hour12: true,
               }
             )
           : "Date TBA",
@@ -368,19 +369,6 @@ const EventDetail = () => {
                 {eventDetails.longDescription}
               </p>
 
-              {eventDetails.prizes && (
-  <div className="mt-8">
-    <h3 className="text-xl font-semibold mb-4 text-[#E056C1]">
-      Prizes
-    </h3>
-    <ul className="list-disc pl-5 space-y-2 text-white/80 md:grid md:grid-cols-2 md:gap-4 md:space-y-0">
-      {formatPrizes(eventDetails.prizes).map((prize, index) => (
-        <li key={index}>{prize}</li>
-      ))}
-    </ul>
-  </div>
-)}
-
               {eventDetails.timeline && (
                 <div className="mt-8">
                   <h3 className="text-xl font-semibold mb-4 text-[#E056C1]">
@@ -403,7 +391,19 @@ const EventDetail = () => {
                   </div>
                 </div>
               )}
-            </div>
+              {eventDetails.prizes && (
+  <div className="mt-8">
+    <h3 className="text-xl font-semibold mb-4 text-[#E056C1]">
+      Prizes
+    </h3>
+    <ul className="list-disc pl-5 space-y-2 text-white/80 md:grid md:grid-cols-2 md:gap-4 md:space-y-0">
+      {formatPrizes(eventDetails.prizes).map((prize, index) => (
+        <li key={index}>{prize}</li>
+      ))}
+    </ul>
+  </div>
+)}
+</div>
           </motion.div>
 
           {/* Rules and Regulations */}
@@ -496,7 +496,7 @@ const EventDetail = () => {
                     <h3 className="font-semibold text-lg">
                       {coordinator.name}
                     </h3>
-                    <p className="text-white/70 mt-1">{coordinator.contact}</p>
+                    <p className="text-white/70 mt-1">{coordinator.contactNumber}</p>
                     <p className="text-white/70">{coordinator.phone}</p>
                   </div>
                 ))}

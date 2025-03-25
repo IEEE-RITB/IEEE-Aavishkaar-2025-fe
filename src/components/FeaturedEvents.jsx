@@ -1,42 +1,43 @@
 import { ArrowRight } from "lucide-react";
-import { eventsData } from "../configs/events.config";
 import { Link } from "react-router";
-import { useState, useEffect } from "react"; // Add these imports
+import { useState, useEffect } from "react";
 import { eventImages } from "../configs/eventImages.config";
 import { API_ENDPOINTS } from "../configs/api.config";
 
 const FeaturedEvents = () => {
-  // Add state management for API data
+  // State management for API data
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Add data fetching effect
+  // Data fetching effect
   useEffect(() => {
     fetch(API_ENDPOINTS.EVENTS)
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch events");
+        }
+        return response.json();
+      })
       .then((data) => {
         console.log("Fetched events:", data);
-        const transformedEvents = data.map((event, index) => ({
+        const transformedEvents = data.map((event) => ({
           id: event.id,
           img: event.img || eventImages[event.eventTheme] || eventImages.Robotics,
           title: event.eventName,
           category: event.eventTheme,
           description: event.eventDescription,
           date: event.date
-            ? new Date(event.date).toLocaleDateString(
-                "en-US",
-                {
-                  month: "long",
-                  day: "numeric",
-                  hour: "numeric",
-                  minute: "numeric",
-                  hour12: true,
-                }
-              )
+            ? new Date(event.date).toLocaleDateString("en-US", {
+                month: "long",
+                day: "numeric",
+                hour: "numeric",
+                minute: "numeric",
+                hour12: true,
+              })
             : "Date TBA",
           venue: event.eventVenue || "TBA",
-          organiser: event.organiser ? event.organiser : "",
+          organiser: event.organiser || "",
         }));
         setEvents(transformedEvents);
         setLoading(false);
@@ -48,7 +49,7 @@ const FeaturedEvents = () => {
       });
   }, []);
 
-  // Add loading state
+  // Loading state
   if (loading) {
     return (
       <section id="featured" className="px-8 md:px-16 lg:px-24 py-8 bg-[#0c0c18]">
@@ -59,7 +60,7 @@ const FeaturedEvents = () => {
     );
   }
 
-  // Add error state
+  // Error state
   if (error) {
     return (
       <section id="featured" className="px-8 md:px-16 lg:px-24 py-8 bg-[#0c0c18]">
@@ -68,10 +69,21 @@ const FeaturedEvents = () => {
     );
   }
 
-  // Get the first 4 events as featured
-  const featuredEvents = events.filter(event => event.organiser === "SB");
+  // Get up to 4 featured events (adjust filtering logic as needed)
+  const featuredEvents = events.slice(0, 4); // Display first 4 events
 
-  // Your existing render code remains the same, but use featuredEvents from API
+  // Handle empty featured events gracefully
+  if (featuredEvents.length === 0) {
+    return (
+      <section id="featured" className="px-8 md:px-16 lg:px-24 py-8 bg-[#0c0c18]">
+        <div className="text-center text-white">
+          <p>No featured events available at the moment.</p>
+        </div>
+      </section>
+    );
+  }
+
+  // Render Featured Events
   return (
     <section id="featured" className="px-8 md:px-16 lg:px-24 py-8 bg-[#0c0c18]">
       <div className="mb-6 flex items-center justify-center">
@@ -84,9 +96,7 @@ const FeaturedEvents = () => {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl">
           {/* Event Cards */}
           {featuredEvents.map((event) => (
-            <Link
-              to={`/events/${event.id}`}
-              key={event.id}
+            <Link to={`/events/${event.id}`} key={event.id}
               className="overflow-hidden rounded-lg bg-[#1e1e2d] hover:shadow-lg hover:shadow-[#4F33B3]/30 transition-all duration-300"
             >
               <div className="relative">
@@ -136,5 +146,4 @@ const FeaturedEvents = () => {
   );
 };
 
-
-export default FeaturedEvents;
+export default FeaturedEvents;
