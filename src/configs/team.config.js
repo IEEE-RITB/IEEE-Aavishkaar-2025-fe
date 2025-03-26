@@ -63,7 +63,8 @@ export const teamMembers = [
       twitter: "https://twitter.com/arjunmenon",
       linkedin: "https://linkedin.com/in/arjunmenon",
       github: "https://github.com/arjunmenon",
-    }, {
+    }, },
+  {
     name: "Shivesh",
     role: "Vice-Tech Head",
     bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
@@ -72,7 +73,7 @@ export const teamMembers = [
       twitter: "https://twitter.com/arjunmenon",
       linkedin: "https://linkedin.com/in/arjunmenon",
       github: "https://github.com/arjunmenon",
-    }, {
+    },}, {
     name: "Aditya G",
     role: "Vice-Secretary",
     bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
@@ -81,7 +82,7 @@ export const teamMembers = [
       twitter: "https://twitter.com/arjunmenon",
       linkedin: "https://linkedin.com/in/arjunmenon",
       github: "https://github.com/arjunmenon",
-    }, {
+    }, },{
     name: "Animmeth",
     role: "Vice-Convernor",
     bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
@@ -90,7 +91,7 @@ export const teamMembers = [
       twitter: "https://twitter.com/arjunmenon",
       linkedin: "https://linkedin.com/in/arjunmenon",
       github: "https://github.com/arjunmenon",
-    }, {
+    }, },{
     name: "Darshan Karekar",
     role: "Vice-Convernor",
     bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
@@ -99,7 +100,7 @@ export const teamMembers = [
       twitter: "https://twitter.com/arjunmenon",
       linkedin: "https://linkedin.com/in/arjunmenon",
       github: "https://github.com/arjunmenon",
-    }, {
+    }, },{
     name: "Navya",
     role: "Vice-Convernor",
     bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
@@ -108,7 +109,7 @@ export const teamMembers = [
       twitter: "https://twitter.com/arjunmenon",
       linkedin: "https://linkedin.com/in/arjunmenon",
       github: "https://github.com/arjunmenon",
-    }, {
+    }, },{
     name: "HG Vashudeva",
     role: "Vice-Convernor",
     bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
@@ -117,7 +118,7 @@ export const teamMembers = [
       twitter: "https://twitter.com/arjunmenon",
       linkedin: "https://linkedin.com/in/arjunmenon",
       github: "https://github.com/arjunmenon",
-    }, {
+    }, },{
     name: "Jeevitha",
     role: "Vice-Convernor",
     bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
@@ -126,7 +127,7 @@ export const teamMembers = [
       twitter: "https://twitter.com/arjunmenon",
       linkedin: "https://linkedin.com/in/arjunmenon",
       github: "https://github.com/arjunmenon",
-    }, {
+    }, },{
     name: "Deekhsita",
     role: "Vice-Convernor",
     bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
@@ -185,7 +186,7 @@ export const teamMembers = [
       twitter: "https://twitter.com/arjunmenon",
       linkedin: "https://linkedin.com/in/arjunmenon",
       github: "https://github.com/arjunmenon",
-    }, {
+    },}, {
     name: "Sameer",
     role: "Vice-Convernor",
     bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
@@ -194,7 +195,7 @@ export const teamMembers = [
       twitter: "https://twitter.com/arjunmenon",
       linkedin: "https://linkedin.com/in/arjunmenon",
       github: "https://github.com/arjunmenon",
-    }, {
+    }, },{
     name: "Sheikh Furkan",
     role: "Vice-Convernor",
     bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
@@ -203,7 +204,7 @@ export const teamMembers = [
       twitter: "https://twitter.com/arjunmenon",
       linkedin: "https://linkedin.com/in/arjunmenon",
       github: "https://github.com/arjunmenon",
-    }, {
+    }, },{
     name: "Shriya Anand",
     role: "Vice-Convernor",
     bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
@@ -212,7 +213,7 @@ export const teamMembers = [
       twitter: "https://twitter.com/arjunmenon",
       linkedin: "https://linkedin.com/in/arjunmenon",
       github: "https://github.com/arjunmenon",
-    }, {
+    }, },{
     name: "Varsha Gowda",
     role: "Vice-Convernor",
     bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
