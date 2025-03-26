@@ -116,7 +116,7 @@ const Team = () => {
       </section>
 
       {/* Team Grid */}
-      {/* <section className="py-8 px-4 sm:px-6 lg:px-12 flex-1">
+      <section className="py-8 px-4 sm:px-6 lg:px-12 flex-1">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {teamMembers.map((member, index) => (
@@ -124,7 +124,7 @@ const Team = () => {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
     </>
   );
 };
