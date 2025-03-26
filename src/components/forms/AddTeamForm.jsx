@@ -284,7 +284,7 @@ const fetchUrl=`https://aavishkaar2025-be.onrender.com/aavishkaar/eventId/${id}`
                   <div key={index} className="form-section">
                     <div className="flex justify-between items-center mb-4">
                       <h3 className="text-lg font-medium text-gray-300">
-                        Member {index + 1}
+                        Member {index + 2}
                       </h3>
                       {formData.members.length > 1 && (
                         <button

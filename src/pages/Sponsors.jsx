@@ -61,7 +61,7 @@ const Sponsors = () => {
 
                 {/* Social Links */}
                 <div className="flex space-x-4 mt-6">
-                  <a
+                  {/* <a
                     href={sponsor.twitter || "#"}
                     className="text-white/70 hover:text-[#E056C1] transition-all hover:scale-110"
                   >
@@ -72,7 +72,7 @@ const Sponsors = () => {
                     className="text-white/70 hover:text-[#E056C1] transition-all hover:scale-110"
                   >
                     <Linkedin className="h-5 w-5" />
-                  </a>
+                  </a> */}
                   <a
                     href={sponsor.website || "#"}
                     className="text-white/70 hover:text-[#E056C1] transition-all hover:scale-110"
