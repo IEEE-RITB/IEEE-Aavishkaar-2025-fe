@@ -2,371 +2,267 @@ export const teamMembers = [
   {
     name: "Ranjana",
     role: "Chairperson",
-    bio: "Experienced event manager with a passion for tech conferences and cultural showcases.",
+    bio: "Visionary leader with experience in event management, specializing in creating impactful tech conferences that bridge innovation and industry insights.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Ranjana_Chair.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/priyasharma",
-      // linkedin: "https://linkedin.com/in/priyasharma",
-      // github: "https://github.com/priyasharma",
-    },
+    social: {},
   },
   {
     name: "Priyanshu",
     role: "Tech Head",
-    bio: "Full-stack developer specialized in creating innovative solutions for hackathons and tech events.",
+    bio: "Innovative full-stack developer with a passion for solving complex technical challenges and mentoring emerging talent in hackathons and tech events.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Images/PRIYANSHU%20ISE%20(%20TECHNICAL%20HEAD).jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/rajatkumar",
-      // linkedin: "https://linkedin.com/in/rajatkumar",
-      // github: "https://github.com/rajatkumar",
-    },
+    social: {},
   },
   {
     name: "Abhinav",
     role: "Secretary",
-    bio: "Creative designer with expertise in UI/UX and branding for tech-focused events.",
+    bio: "Design-driven professional with a keen eye for detail, transforming complex event concepts into compelling visual narratives and brand experiences.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Abhinav_EEE_.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/vikramsingh",
-      // linkedin: "https://linkedin.com/in/vikramsingh",
-      // github: "https://github.com/vikramsingh",
-    },
-  }, {
+    social: {},
+  },
+  {
     name: "Ravisagar K",
     role: "Treasurer",
+    bio: "Financial strategist with expertise in budget planning and resource allocation, ensuring optimal financial management for large-scale tech events.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Ravisagar_BT.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
-  }, {
+    social: {},
+  },
+  {
     name: "Deekshita",
     role: "Convenor",
+    bio: "Dynamic event orchestrator with exceptional organizational skills, adept at coordinating complex multi-team initiatives and ensuring smooth event execution.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Deekshitha_Convenor.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
     name: "Ryan Gomez",
     role: "Vice-Chair",
+    bio: "Strategic collaborator with a talent for team building and cross-functional leadership, supporting the chairperson in driving organizational vision.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Images/IMG_7510.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/ananyapatel",
-      // linkedin: "https://linkedin.com/in/ananyapatel",
-      // github: null,
-    },
-  }, {
+    social: {},
+  },
+  {
     name: "Aditya G",
     role: "Vice-Secretary",
+    bio: "Detail-oriented administrator skilled in documentation, communication, and ensuring seamless coordination between different event management teams.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/ADITYA%20GANGWANI_VICE%20SECRETARY.png?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
-  }, {
+    social: {},
+  },
+  {
     name: "Shaikh Furkan",
     role: "Vice-Treasurer",
+    bio: "Financial analyst with a sharp eye for budgeting details, supporting comprehensive financial planning and expense tracking for tech events.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Shaikh%20Furqan.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
     name: "Nagashree NS",
-    role: "Social Medaia Head",
+    role: "Social Media Head",
+    bio: "Digital marketing strategist with a passion for creating engaging online narratives and building vibrant digital communities around tech events.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/nagashree.jpeg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
-
   {
     name: "Janis Lobo",
     role: "Design Head",
+    bio: "Creative director with a holistic approach to visual communication, transforming complex concepts into stunning, memorable design experiences.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/7.jpeg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
     name: "Shivesh",
     role: "Vice-Tech Head",
+    bio: "Technical innovator supporting cutting-edge technology implementations, with a knack for troubleshooting and providing technical guidance.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Shivesh%20Tiwari_SB_Vice%20Technical%20Head.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
-
   {
     name: "Navya",
     role: "Vice-Convernor",
+    bio: "Collaborative event coordinator with exceptional interpersonal skills, ensuring smooth communication and alignment across different event management teams.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Navya%20Ullas%20Rai_Vice-Convenor.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
     name: "Sanjay U",
     role: "Web Resources Head",
+    bio: "Digital infrastructure expert specializing in creating robust, user-friendly web platforms that enhance event accessibility and engagement.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Sanjay.png?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
     name: "Abhishek V K",
     role: "Web Resources Co-Head",
+    bio: "Web development enthusiast focused on implementing innovative digital solutions and supporting seamless online event experiences.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Abhishek.png?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-    },
+    social: {},
   },
-
   {
     name: "Hiba",
-    role: "Design Co-Head",
+    role: "Design Vice-Head",
+    bio: "Creative professional with a passion for visual storytelling, bringing fresh perspectives and innovative design concepts to life.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/4.jpeg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
     name: "Nibha",
     role: "Design Co-Head",
+    bio: "Visual communication expert dedicated to crafting compelling design narratives that capture the essence of tech innovation.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/2.jpeg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
-    name: "Vishwas ",
-    role: "Web Resource DEveloper & CS(AIML)-Coordinator",
+    name: "Vishwas",
+    role: "Web Resource Developer",
+    bio: "AI and machine learning enthusiast combining technical expertise with web development skills to create intelligent digital solutions.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Vishwas_CSE(Aiml).jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
-    name: "Vedang ",
+    name: "Vedang",
     role: "Web Resource Developer",
+    bio: "Innovative web developer passionate about creating seamless, responsive digital experiences that push the boundaries of user interaction.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Vedang.jpeg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
-    name: "Karan ",
+    name: "Karan",
     role: "Web Resource Developer",
+    bio: "Technical creative with a focus on developing efficient, user-centric web solutions that enhance digital engagement and accessibility.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Karan.jpeg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
-{
+  {
     name: "Manjeet Roy",
     role: "Web Resource Developer",
-    bio: "Works on the event website, ensuring smooth user experience and performance.",
+    bio: "Web development professional dedicated to crafting intuitive digital platforms that provide exceptional user experiences and performance.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/manjeet.jpeg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
-},
+    social: {},
+  },
   {
     name: "Satyajeet",
     role: "Designer",
+    bio: "Visual artist exploring the intersection of creativity and technology, bringing unique design perspectives to every project.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/8.jpeg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
     name: "Kishan G",
     role: "Designer",
+    bio: "Creative problem solver with a talent for transforming complex concepts into visually stunning and meaningful design solutions.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/6.jpeg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
     name: "Aditi R",
     role: "Designer",
+    bio: "Innovative visual communicator who brings fresh, imaginative approaches to design, bridging aesthetics with functional storytelling.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/9.jpeg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
     name: "Kavana",
     role: "Designer",
+    bio: "Design strategist with a keen eye for detail and a passion for creating visually compelling narratives that resonate with diverse audiences.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/5.jpeg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
     name: "Ojasvi",
     role: "Designer",
+    bio: "Creative professional exploring innovative design techniques that transform complex ideas into intuitive visual experiences.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/1.jpeg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
     name: "Rishi Raj",
     role: "Designer",
+    bio: "Visual storyteller who combines artistic creativity with strategic thinking to develop impactful design solutions.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/3.jpeg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
     name: "Animmeth",
     role: "MBA Coordinator",
+    bio: "Strategic business professional bridging academic insights with practical event management and entrepreneurial leadership.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Animeeth%20Ghosh%20MBA.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
-  }, {
+    social: {},
+  },
+  {
     name: "Darshan Karekar",
     role: "MCA-Coordinator",
+    bio: "Technical academic leader passionate about connecting advanced computing concepts with real-world technological innovations.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Darshan%20Karekar%20MCA.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
-  }, {
+    social: {},
+  },
+  {
     name: "HG Vashudeva",
     role: "AIML-Coordinator",
+    bio: "AI and machine learning expert dedicated to exploring cutting-edge technological frontiers and fostering innovation in intelligent systems.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/H%20G%20Vasudeva_AIML.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
-  }, {
+    social: {},
+  },
+  {
     name: "Jeevitha",
     role: "MCA-Coordinator",
+    bio: "Computational research enthusiast committed to advancing technological education and bridging academic knowledge with industry practices.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Jeevitha%20(MCA).jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
-  }, {
+    social: {},
+  },
+  {
     name: "Kannan",
     role: "Mech-Coordinator",
+    bio: "Mechanical engineering innovator focused on exploring emerging technologies and their transformative potential in industrial applications.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Kannan_Mech.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
-  }, {
+    social: {},
+  },
+  {
     name: "Meenakshi",
     role: "Aerospace-Coordinator",
+    bio: "Aerospace technology enthusiast dedicated to pushing the boundaries of engineering innovation and space exploration.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Meenakshi%20K_Aerospace.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
-  }, {
+    social: {},
+  },
+  {
     name: "Raveena",
     role: "Chemical-Coordinator",
+    bio: "Chemical engineering professional passionate about sustainable technological solutions and interdisciplinary research approaches.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Raveena%20SK_Chemical.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
-  }, {
+    social: {},
+  },
+  {
     name: "Praful Anand",
     role: "CS(CY)-Coordinator",
+    bio: "Cybersecurity expert committed to exploring digital protection strategies and emerging technological defense mechanisms.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/PRAFULL%20ANAND_CSE(CY).jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
-  }, {
+    social: {},
+  },
+  {
     name: "Sameer",
     role: "ETE-Coordinator",
+    bio: "Electronics and telecommunications innovator focused on advancing communication technologies and their societal impact.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Sameer%20P%20Bhandiwad_ETE.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
-  }, {
+    social: {},
+  },
+  {
     name: "Shriya",
     role: "AIDS-Coordinator",
+    bio: "Data science professional dedicated to leveraging artificial intelligence and data strategies for transformative technological solutions.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Shriya_AI%26DS.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
-  }, {
+    social: {},
+  },
+  {
     name: "Varsha Gowda",
     role: "MD-Coordinator",
+    bio: "Medical technology enthusiast exploring innovative intersections between healthcare, digital technologies, and transformative research.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Varsha%20Gowda_MD.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/arjunmenon",
-      // linkedin: "https://linkedin.com/in/arjunmenon",
-      // github: "https://github.com/arjunmenon",
-    },
+    social: {},
   },
   {
     name: "Devika",
     role: "EI-Coordinator",
+    bio: "Instrumentation engineering professional passionate about developing intelligent systems and advanced technological measurement techniques.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Devika%20N_%20EIE.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/nehagupta",
-      // linkedin: "https://linkedin.com/in/nehagupta",
-      // github: null,
-    },
+    social: {},
   },
 ];
