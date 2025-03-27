@@ -120,7 +120,6 @@ export const teamMembers = [
       image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Sanjay.png?raw=true",
       social: {
         // twitter: "https://twitter.com/arjunmenon",
-         linkedin: "https://www.linkedin.com/in/sanjay-u-372b43286",
         // github: "https://github.com/arjunmenon",
       }, },
       {
