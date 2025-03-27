@@ -130,8 +130,6 @@ export const teamMembers = [
         image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Abhishek.png?raw=true",
         social: {
           // twitter: "https://twitter.com/arjunmenon",
-           linkedin: "https://www.linkedin.com/in/abhishek-v-k-574846248/",
-           github: "https://github.com/Abhishekvk04",
         }, },
         {
           name: "Vedang ",
