@@ -19,7 +19,8 @@ export const whatsappLinks = {
     "67e17cfa367bf1d811c20082": "https://chat.whatsapp.com/GcNe19Xn6gkELcmF0FqVLr",
     "67e19965367bf1d811c2251d": "https://chat.whatsapp.com/FwiGfdDZOtW4ojNTN1vwIh",
     "67e188c3367bf1d811c20d4c": "https://chat.whatsapp.com/HHfsoeGGI0XLBJ3gOrUAaZ",
-    "67e23aa5ad3fb5cb8f6257eb": "https://chat.whatsapp.com/JrcjtdTEiY4EmIe1ASXXdQ"
+    "67e23aa5ad3fb5cb8f6257eb": "https://chat.whatsapp.com/JrcjtdTEiY4EmIe1ASXXdQ",
+    "67e22f6a64aa9337a5071289": "https://chat.whatsapp.com/EVKchRjvESlE09dvtk7apB",
   };
 
   
