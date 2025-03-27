@@ -121,16 +121,6 @@ export const teamMembers = [
     },
   },
   {
-    name: "Devika",
-    role: "EI-Coordinator",
-    image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Devika%20N_%20EIE.jpg?raw=true",
-    social: {
-      // twitter: "https://twitter.com/nehagupta",
-      // linkedin: "https://linkedin.com/in/nehagupta",
-      // github: null,
-    },
-  },
-  {
     name: "Sanjay U",
     role: "Web Resources Head",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Sanjay.png?raw=true",
@@ -357,6 +347,16 @@ export const teamMembers = [
       // twitter: "https://twitter.com/arjunmenon",
       // linkedin: "https://linkedin.com/in/arjunmenon",
       // github: "https://github.com/arjunmenon",
+    },
+  },
+  {
+    name: "Devika",
+    role: "EI-Coordinator",
+    image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Devika%20N_%20EIE.jpg?raw=true",
+    social: {
+      // twitter: "https://twitter.com/nehagupta",
+      // linkedin: "https://linkedin.com/in/nehagupta",
+      // github: null,
     },
   },
 ];
