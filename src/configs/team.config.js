@@ -34,7 +34,6 @@ export const teamMembers = [
   }, {
     name: "Ravisagar K",
     role: "Treasurer",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Ravisagar_BT.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -44,7 +43,6 @@ export const teamMembers = [
   }, {
     name: "Deekshita",
     role: "Convenor",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Deekshitha_Convenor.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -55,7 +53,6 @@ export const teamMembers = [
   {
     name: "Ryan Gomez",
     role: "Vice-Chair",
-    bio: "Digital marketing specialist focused on promoting tech and cultural events across platforms.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Images/IMG_7510.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/ananyapatel",
@@ -65,7 +62,6 @@ export const teamMembers = [
   }, {
     name: "Aditya G",
     role: "Vice-Secretary",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/ADITYA%20GANGWANI_VICE%20SECRETARY.png?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -75,7 +71,6 @@ export const teamMembers = [
   }, {
     name: "Shaikh Furkan",
     role: "Vice-Treasurer",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Shaikh%20Furqan.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -86,8 +81,18 @@ export const teamMembers = [
   {
     name: "Nagashree NS",
     role: "Social Medaia Head",
-    bio: "Social Medaia Head & technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/nagashree.jpeg?raw=true",
+    social: {
+      // twitter: "https://twitter.com/arjunmenon",
+      // linkedin: "https://linkedin.com/in/arjunmenon",
+      // github: "https://github.com/arjunmenon",
+    },
+  },
+  
+  {
+    name: "Janis Lobo",
+    role: "Design Head",
+    image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/7.jpeg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
       // linkedin: "https://linkedin.com/in/arjunmenon",
@@ -97,7 +102,6 @@ export const teamMembers = [
   {
     name: "Shivesh",
     role: "Vice-Tech Head",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Shivesh%20Tiwari_SB_Vice%20Technical%20Head.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -109,7 +113,6 @@ export const teamMembers = [
   {
     name: "Navya",
     role: "Vice-Convernor",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Navya%20Ullas%20Rai_Vice-Convenor.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -120,7 +123,6 @@ export const teamMembers = [
   {
     name: "Devika",
     role: "EI-Coordinator",
-    bio: "Content strategist with experience in creating engaging narratives for tech and cultural events.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Devika%20N_%20EIE.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/nehagupta",
@@ -131,7 +133,6 @@ export const teamMembers = [
   {
     name: "Sanjay U",
     role: "Web Resources Head",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Sanjay.png?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -141,16 +142,45 @@ export const teamMembers = [
   {
     name: "Abhishek V K",
     role: "Web Resources Co-Head",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Abhishek.png?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
     },
   },
+  
+  {
+    name: "Hiba",
+    role: "Design Co-Head",
+    image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/4.jpeg?raw=true",
+    social: {
+      // twitter: "https://twitter.com/arjunmenon",
+      // linkedin: "https://linkedin.com/in/arjunmenon",
+      // github: "https://github.com/arjunmenon",
+    },
+  },
+  {
+    name: "Nibha",
+    role: "Design Co-Head",
+    image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/2.jpeg?raw=true",
+    social: {
+      // twitter: "https://twitter.com/arjunmenon",
+      // linkedin: "https://linkedin.com/in/arjunmenon",
+      // github: "https://github.com/arjunmenon",
+    },
+  },
+  {
+    name: "Vishwas ",
+    role: "Web Resource DEveloper & CS(AIML)-Coordinator",
+    image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Vishwas_CSE(Aiml).jpg?raw=true",
+    social: {
+      // twitter: "https://twitter.com/arjunmenon",
+      // linkedin: "https://linkedin.com/in/arjunmenon",
+      // github: "https://github.com/arjunmenon",
+    },
+  },
   {
     name: "Vedang ",
     role: "Web Resource Developer",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Vedang.jpeg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -161,7 +191,6 @@ export const teamMembers = [
   {
     name: "Karan ",
     role: "Web Resource Developer",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Karan.jpeg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -169,11 +198,61 @@ export const teamMembers = [
       // github: "https://github.com/arjunmenon",
     },
   },
+  
   {
-    name: "Vishwas ",
-    role: "CS(AIML)-Coordinator",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
-    image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Vishwas_CSE(Aiml).jpg?raw=true",
+    name: "Satyajeet",
+    role: "Designer",
+    image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/8.jpeg?raw=true",
+    social: {
+      // twitter: "https://twitter.com/arjunmenon",
+      // linkedin: "https://linkedin.com/in/arjunmenon",
+      // github: "https://github.com/arjunmenon",
+    },
+  },
+  {
+    name: "Kishan G",
+    role: "Designer",
+    image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/6.jpeg?raw=true",
+    social: {
+      // twitter: "https://twitter.com/arjunmenon",
+      // linkedin: "https://linkedin.com/in/arjunmenon",
+      // github: "https://github.com/arjunmenon",
+    },
+  },
+  {
+    name: "Aditi R",
+    role: "Designer",
+    image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/9.jpeg?raw=true",
+    social: {
+      // twitter: "https://twitter.com/arjunmenon",
+      // linkedin: "https://linkedin.com/in/arjunmenon",
+      // github: "https://github.com/arjunmenon",
+    },
+  },
+  {
+    name: "Kavana",
+    role: "Designer",
+    image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/5.jpeg?raw=true",
+    social: {
+      // twitter: "https://twitter.com/arjunmenon",
+      // linkedin: "https://linkedin.com/in/arjunmenon",
+      // github: "https://github.com/arjunmenon",
+    },
+  },
+  {
+    name: "Ojasvi",
+    role: "Designer",
+    image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/1.jpeg?raw=true",
+    social: {
+      // twitter: "https://twitter.com/arjunmenon",
+      // linkedin: "https://linkedin.com/in/arjunmenon",
+      // github: "https://github.com/arjunmenon",
+    },
+  },
+  {
+    name: "Rishi Raj",
+    role: "Designer",
+    image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Design%20Team/3.jpeg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
       // linkedin: "https://linkedin.com/in/arjunmenon",
@@ -183,7 +262,6 @@ export const teamMembers = [
   {
     name: "Animmeth",
     role: "MBA Coordinator",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Animeeth%20Ghosh%20MBA.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -193,7 +271,6 @@ export const teamMembers = [
   }, {
     name: "Darshan Karekar",
     role: "MCA-Coordinator",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Darshan%20Karekar%20MCA.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -203,7 +280,6 @@ export const teamMembers = [
   }, {
     name: "HG Vashudeva",
     role: "AIML-Coordinator",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/H%20G%20Vasudeva_AIML.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -213,7 +289,6 @@ export const teamMembers = [
   }, {
     name: "Jeevitha",
     role: "MCA-Coordinator",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Jeevitha%20(MCA).jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -223,7 +298,6 @@ export const teamMembers = [
   }, {
     name: "Kannan",
     role: "Mech-Coordinator",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Kannan_Mech.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -233,7 +307,6 @@ export const teamMembers = [
   }, {
     name: "Meenakshi",
     role: "Aerospace-Coordinator",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Meenakshi%20K_Aerospace.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -243,7 +316,6 @@ export const teamMembers = [
   }, {
     name: "Raveena",
     role: "Chemical-Coordinator",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Raveena%20SK_Chemical.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -253,7 +325,6 @@ export const teamMembers = [
   }, {
     name: "Praful Anand",
     role: "CS(CY)-Coordinator",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/PRAFULL%20ANAND_CSE(CY).jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -263,7 +334,6 @@ export const teamMembers = [
   }, {
     name: "Sameer",
     role: "ETE-Coordinator",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Sameer%20P%20Bhandiwad_ETE.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -273,7 +343,6 @@ export const teamMembers = [
   }, {
     name: "Shriya",
     role: "AIDS-Coordinator",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Shriya_AI%26DS.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
@@ -283,7 +352,6 @@ export const teamMembers = [
   }, {
     name: "Varsha Gowda",
     role: "MD-Coordinator",
-    bio: "Systems engineer specializing in event infrastructure and technical problem-solving.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Varsha%20Gowda_MD.jpg?raw=true",
     social: {
       // twitter: "https://twitter.com/arjunmenon",
