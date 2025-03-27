@@ -1,5 +1,5 @@
 export const eventStatuses = {
-    "67e18baf367bf1d811c20ef4": { status: 1,  } ,
+    "67e18baf367bf1d811c20ef4": { status: 0,  } ,
     "67e192e0367bf1d811c21877": { status: 0,  },
     "67e17f1a367bf1d811c20253": { status: 0,  },
     "67e17fd9367bf1d811c202c3": { status: 0,  },
