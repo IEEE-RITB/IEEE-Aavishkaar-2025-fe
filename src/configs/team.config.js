@@ -119,7 +119,7 @@ export const teamMembers = [
   },
   {
     name: "Devika",
-    role: "Content Manager",
+    role: "EI-Coordinator",
     bio: "Content strategist with experience in creating engaging narratives for tech and cultural events.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/Devika%20N_%20EIE.jpg?raw=true",
     social: {
