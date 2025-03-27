@@ -193,6 +193,11 @@ export const teamMembers = [
     role: "Web Resource Developer",
     bio: "Works on the event website, ensuring smooth user experience and performance.",
     image: "https://github.com/Abhishekvk04/TechFest/blob/main/SB/manjeet.jpeg?raw=true",
+    social: {
+      // twitter: "https://twitter.com/arjunmenon",
+      // linkedin: "https://linkedin.com/in/arjunmenon",
+      // github: "https://github.com/arjunmenon",
+    },
 },
   {
     name: "Satyajeet",
