@@ -6,13 +6,15 @@ import axios from "axios";
 import logo from "../../assets/logo.png";
 import { useNavigate } from "react-router";
 import { ToastContainer,toast } from "react-toastify";
+import {eventStatuses} from "../../configs/eventStatuses.config";
 
 const AddTeamForm = () => {
   const [eventData,setEventData] = useState({});
   const {id}=useParams();
-  // useEffect(()=>{
-  //    fetch(API_ENDPOINTS.EVENT_DETAIL(id))
-  // })
+  const [isRegistrationClosed, setIsRegistrationClosed] = useState(false);
+
+
+
   let navigate=useNavigate();
   const beUrl="https://aavishkaar2025-be.onrender.com/aavishkaar/teams/register";
   const [formData, setFormData] = useState({
@@ -33,15 +35,28 @@ const AddTeamForm = () => {
   });
 
   async function fetchInfo() {
-const fetchUrl=`https://aavishkaar2025-be.onrender.com/aavishkaar/eventId/${id}`;
-    let event_data = await axios.get(fetchUrl);
-    console.log("fetched", event_data.data)
-    setEventData(event_data.data)
+    const fetchUrl=`https://aavishkaar2025-be.onrender.com/aavishkaar/eventId/${id}`;
+      let event_data = await axios.get(fetchUrl);
+      console.log("fetched", event_data.data)
+      setEventData(event_data.data)
   }
 
   useEffect(() => {
     fetchInfo()
-  },[])
+  },[]);
+
+  useEffect(() => {
+    // Use the imported config to check the event status
+    const eventInfo = eventStatuses[id] || { status: 1, maxParticipantsPerTeam: 4 };
+    setEventData(eventInfo);
+    if (eventInfo.status === 0) {
+      setIsRegistrationClosed(true);
+      toast.error("Registration for this event is closed!", { 
+        position: "top-center", 
+        autoClose: 3000 
+      });
+    }
+  }, [id]);
   // Toast Notification Function
   const notify =  () => toast.success("Team Registered Successfully! Page will redirect to Whatsapp Link ", {
     position: "top-center",
@@ -54,10 +69,10 @@ const fetchUrl=`https://aavishkaar2025-be.onrender.com/aavishkaar/eventId/${id}`
   });
   const handleSubmit =async (e) => {
     e.preventDefault();
+    if (isRegistrationClosed) return;
     try {
       await axios.post(beUrl, formData);
       notify();
-      // setTimeout(()=>navigate("https://chat.whatsapp.com/L43AtjqvFUcIAM1BckgPfn"),4000);
       setTimeout(() => navigate(`/acknowledgement/${id}`), 4000);
 
     } catch (e) {
@@ -154,7 +169,12 @@ const fetchUrl=`https://aavishkaar2025-be.onrender.com/aavishkaar/eventId/${id}`
         </div>
 
         <div className="form-section space-y-8">
-          <form onSubmit={handleSubmit} className="space-y-8">
+          {isRegistrationClosed?(
+            <div className="text-center text-red-500 text-xl font-semibold">
+            Registration for this event is closed.
+          </div>
+          ):(
+            <form onSubmit={handleSubmit} className="space-y-8">
             {/* Team Name */}
             <div>
               <label htmlFor="teamName" className={styles.formLabel}>
@@ -380,6 +400,9 @@ const fetchUrl=`https://aavishkaar2025-be.onrender.com/aavishkaar/eventId/${id}`
           />
         </button>
           </form>
+          )
+          }
+          
         </div>
       </div>
       <ToastContainer/>
