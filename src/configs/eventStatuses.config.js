@@ -11,7 +11,7 @@ export const eventStatuses = {
     "67e18b70367bf1d811c20ee6": { status: 0,  },
     "67e187f7367bf1d811c209f4": { status: 0,  },
     "67e18a90367bf1d811c20d82": { status: 0,  },
-    "67e18921367bf1d811c20d59": { status: 1,  },
+    "67e18921367bf1d811c20d59": { status: 0,  },
     "67e19077367bf1d811c2127c": { status: 0,  },
     "67e1910e367bf1d811c21612": { status: 0,  },
     "67e23b12ad3fb5cb8f6257f9": { status: 0,  },
